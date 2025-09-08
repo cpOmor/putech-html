@@ -1,0 +1,49 @@
+$flaticon_landing-font: "flaticon_landing";
+
+@font-face {
+    font-family: $flaticon_landing-font;
+    src: url("./flaticon_landing.woff2?6a43135e6006b6b72b7a6450050b7993") format("woff2"),
+url("./flaticon_landing.woff?6a43135e6006b6b72b7a6450050b7993") format("woff"),
+url("./flaticon_landing.eot?6a43135e6006b6b72b7a6450050b7993#iefix") format("embedded-opentype"),
+url("./flaticon_landing.ttf?6a43135e6006b6b72b7a6450050b7993") format("truetype"),
+url("./flaticon_landing.svg?6a43135e6006b6b72b7a6450050b7993#flaticon_landing") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_landing !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_landing-map: (
+    "up-right-arrow": "\f101",
+    "right-arrow": "\f102",
+    "check": "\f103",
+    "shopping-cart": "\f104",
+    "right-arrow-1": "\f105",
+    "left-arrow": "\f106",
+);
+
+.flaticon-up-right-arrow:before {
+    content: map-get($flaticon_landing-map, "up-right-arrow");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_landing-map, "right-arrow");
+}
+.flaticon-check:before {
+    content: map-get($flaticon_landing-map, "check");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon_landing-map, "shopping-cart");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_landing-map, "right-arrow-1");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon_landing-map, "left-arrow");
+}

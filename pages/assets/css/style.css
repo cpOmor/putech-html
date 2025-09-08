@@ -1,0 +1,72 @@
+/* 
+
+-----------------------------------------------------------------------------------
+Template Name: Sasly - Multipurpose Landing Page HTML Template
+Page Name: All Pages
+Description: Sasly is a flexible and professional Multipurpose HTML template, ideal for a variety of landing page needs including SaaS, software, fintech, Ai, E-learning, creative agencies, consulting services, software subscriptions, web applications, and digital marketing websites.
+Author: Pixelfit
+Version: 1.0 
+-----------------------------------------------------------------------------------
+
+*/
+/* Common CSS */
+
+
+.case-slider .slick-slide {
+  margin: 0 15px;
+} 
+
+/* Animated List Wrap */
+.headline-wrap {
+  font-size: 250px;
+  line-height: normal;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 991px) {
+  .headline-wrap {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .headline-wrap {
+    font-size: 80px;
+    line-height: 1.2;
+  }
+}
+
+.headline-wrap .marquee-wrap {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.headline-wrap .marquee-item {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.headline-wrap .marquee-inner {
+  display: flex;
+  animation: marquee_left 15s linear infinite;
+}
+
+/* Headline Animation */
+@keyframes marquee_left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+.nav-link {
+  border: none; /* Default state: no border */
+  transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+.nav-link.active-tab {
+  border-bottom: 2px solid #3498db; /* Active state: Add border with desired color and width */
+}

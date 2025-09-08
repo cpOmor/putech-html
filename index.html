@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <!--====== Required meta tags ======-->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--====== Title ======-->
+        <title>Sasly - Multipurpose Landing Page HTML Template</title>
+        <!--====== Favicon Icon ======-->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        <!--====== Google Fonts ======-->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <!--====== Flaticon css ======-->
+        <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_landing.css">
+        <!--====== Slick-popup css ======-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!--====== Animate css ======-->
+        <link rel="stylesheet" href="assets/css/aos.css">
+         <!--====== Default css ======-->
+       <link rel="stylesheet" href="./common/css/index.css">
+       <link rel="stylesheet" href="./common/css/line_animation.css">
+           <!--====== Tailwind css ======-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--====== Tailwind config ======-->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    primary: '#F14F44',
+                    secondaryColor:'#111',
+                    textColor:'#696969',
+                    'primary-black-bg':'#1F1F1F',
+                    'sectionBtnColor':'#FEEEED'
+
+                  },
+
+                  fontFamily: {
+                  Jakarta: ['Plus Jakarta Sans', 'serif'],
+                  Manrope: ['Manrope', 'serif'],
+                     },
+
+                     boxShadow: {
+                     'nav-shadow': '10px 4px 60px rgba(157, 157, 157, 0.25)',
+                     'card': '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
+                     'card-small': '0px 0px 20px 0px rgba(241, 79, 68, 0.05)',
+                      },
+
+                      
+
+                    
+                }
+              },
+              plugins: [
+                 function ({ addBase }) {
+                     addBase({
+                         h1: {
+                             '@apply font-bold text-white font-Jakarta md:text-[60px] text-[32px]': {},
+                         },
+                         h2: {
+                             '@apply text-secondaryColor md:text-[52px] text-[28px] font-bold font-Jakarta tracking-[-1.04px]': {},
+                         },
+                         h3: {
+                             '@apply font-bold font-Jakarta text-[27px]': {},
+                         },
+                         h4: {
+                             '@apply xl:text-[22px] lg:text-[18px] text-[18px] text-secondaryColor font-Jakarta font-semibold leading-[35px]': {},
+                         },
+                         h5: {
+                             '@apply md:text-[20px] text-[18px] text-white font-Jakarta font-medium': {},
+                         },
+                         h6: {
+                             '@apply text-[14px] text-white font-semibold font-Manrope': {},
+                         },
+                         p: {
+                             '@apply text-textColor text-[16px] font-normal font-Manrope leading-7': {},
+                         },
+
+                         '.sub-heading-btn':{
+                            '@apply px-5 py-[6px] bg-sectionBtnColor rounded-[14px] text-[20px] text-secondaryColor font-Manrope font-semibold border-[2px] border-[rgba(241,79,68,0.10)]': {},
+                         },
+
+                          '.nav-menu':{
+                            '@apply text-[18px] font-Jakarta text-secondaryColor font-semibold relative inline-block cursor-pointer after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1.5px] after:bg-primary after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:text-primary hover:after:scale-x-100 hover:after:origin-left': {},
+                         },
+
+                          '.nav-sub-menu':{
+                            '@apply block w-[250px] pt-4 pl-7 hover:text-primary hover:pl-12 duration-300': {},
+                         },
+
+
+                         '.mobile-sub-menu':{
+                            '@apply inline-block text-left text-secondaryColor text-[18px] pl-4 font-semibold hover:text-primary hover:transform hover:translate-x-3 duration-300': {},
+                         },
+
+                         
+                         '.custom-container': {
+                       '@apply max-w-[1200px] mx-auto 2xl:max-w-[1314px] 2xl:px-3 md:px-8 lg:px-3 px-3': {},
+                         },
+                     });
+                 },
+             ],
+            }
+          </script>
+    </head>
+    <body class="relative">
+        <!--====== Start Preloader ======-->
+        <div class="preloader hodden fixed inset-0 flex items-center justify-center bg-white !z-[999999999999]">
+            <div class="loader">
+                <img src="assets/images/loader.png" alt="loader">
+            </div>
+        </div><!--====== End Preloader ======-->
+        <!--=== Start Header Area  ===-->
+        <header class="absolute top-0 z-[999999] h-[80px] w-full">
+            <div class="flex justify-between items-center h-[80px] custom-container">
+                <div class="brand-logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="brand-logo"></a>
+                </div>
+                <div class="buy-button">
+                    <a href="https://themeforest.net/item/sasly-multipurpose-landing-page-html-template/55206888" target="_blank" class="bg-primary rounded-full px-10 py-4 text-[16px] text-white font-Jakarta font-bold ">Buy Now <i class="flaticon-shopping-cart pl-2 pt-2"></i></a>
+                </div>
+            </div>
+        </header>
+        <!--=== End Header Area ===-->
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!--======  Start Hero Section  =======-->
+                <section class="bg-cover bg-no-repeat " style="background-image: url(assets/images/hero-bg.jpg);">
+                    <div>
+                        <div class="custom-container pt-[150px] md:pt-[180px]">
+                            <div class="text-center">
+                                <h1 class="text-anm lg:text-[85px] md:text-[50px] text-[40px] text-secondaryColor font-Jakarta font-bold lg:leading-[100px] md:leading-[70px] leading-[45px]">Create your <br>
+                                    Beautiful website</h1>
+                                <h5 class="text-secondaryColor text-[18px] mt-5 font-medium font-Jakarta">A best template for different purposes that creativity, efficiency, and diversity.</h5>
+                            </div>
+                        </div>
+                        <div class="custom-container  relative mt-[150px] md:mt-[330px] lg:mt-[500px] pt-[60px]">
+                            <div class="absolute !z-0 left-0 hidden bottom-0  lg:block ">
+                                <img src="assets/images/left.png" alt="Preview Image">
+                            </div>
+                            <!-- <div class="max-w-[875px] absolute mt-[180px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+                                <img class="w-full" src="assets/images/laptop.png" alt="Preview Image">
+                            </div> -->
+                            <div class="absolute right-0 hidden  bottom-0 lg:block">
+                                <img src="assets/images/right.png" alt="Preview Image">
+                            </div>
+                            <div class="w-[90%] lg:w-[875px]  absolute -bottom-10 md:-bottom-14 left-1/2 transform -translate-x-1/2  z-20">
+                                <img class="w-full" src="assets/images/laptop.png" alt="Preview Image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--====== End  Hero Section  =======-->
+                <!--======  Start Home Preview Section  =======-->
+                <section class="mb-[130px] pt-[80px] md:pt-[150px] ">
+                    <div class="custom-container">
+                        <!--===  Text Box  =====-->
+                        <div class="max-w-[750px] mx-auto">
+                            <h2 class="text-anm text-center text-[32px] md:text-[52px]">Stunning Pre-Made Demos to Elevate Your Website</h2>
+                            <p class="text-center mt-5" data-aos="fade-up" data-aos-duration="1000">Select from existing styles or bring your ideas to life by customizing your site.</p>
+                            <ul class="mt-7 flex flex-wrap justify-center items-center text-textColor text-[16px] font-Jakarta font-medium gap-5" data-aos="fade-up" data-aos-duration="1200">
+                                <li class="inline-block "><i class="flaticon-check text-primary text-[20px]"></i>Tailwind CSS Supported</li>
+                                <li class="inline-block "><i class="flaticon-check text-primary text-[20px]"></i>Change Fonts & Colors Globally</li>
+                                <li class="inline-block "><i class="flaticon-check text-primary text-[20px]"></i>Fully Responsive Layout</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!--===  Item Heading  =====-->
+                    <div class="mt-[70px]">
+                        <div class="mx-[30px] flex justify-between items-center">
+                            <div data-aos="fade-right" data-aos-duration="800">
+                                <h4 class="text-[22px] text-secondaryColor font-Jakarta font-bold">Home Demo</h4>
+                            </div>
+                            <div data-aos="fade-left" data-aos-duration="1000">
+                             
+                                <a href="./home-ai/index.html" target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] bg-gray-300 mt-[30px] mx-[30px]"></div>
+
+                    <!--===  Home Wrapper  =====-->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[50px] gap-[30px] mt-10 md:mx-[30px] mx-3">
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="800">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home1.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Business</h4>
+                                    <a href="./home-business/index.html"  target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="1000">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home2.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Software</h4>
+                                    <a href="./home-software/index.html"  target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="1200">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home3.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Home AI </h4>
+                                    <a href="./home-ai/index.html" target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="1200">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home4.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Home AI </h4>
+                                    <a href="./home-ai/index.html" target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="1600">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home5.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Fintech</h4>
+                                    <a href="./home-fintech/index.html"  target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="1800">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/home6.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Website Builder</h4>
+                                    <a  href="./website-builder/index.html"  target="_blank" class="inline-block bg-secondaryColor px-6 py-3 rounded-full text-white text-[16px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out items-center">View Demo<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5" data-aos="fade-up" data-aos-duration="2000">
+                            <!--===  Preview item  =====-->
+                            <div>
+                                <div>
+                                    <img class="rounded-[14px]" src="assets/images/upcoming.jpg" alt="Home">
+                                </div>
+                                <div class="flex justify-between items-center mt-10">
+                                    <h4>Upcoming</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <!--======  End Home Preview Section  =======-->
+                <!--====== Start Features Section ======-->
+                <section class="bg-[#FFFBFB] py-[130px]">
+                    <div class="2xl:max-w-[70%] xl:max-w-[90%] lg:w-[96%] mx-auto px-5 md:px-6 lg:px-2">
+                        <!--=== Text Box ===-->
+                        <div class="text-center max-w-[700px] mx-auto">
+                            <h2 class="text-anm">Core Features</h2>
+                            <p class="mt-5" data-aos="fade-up" data-aos-duration="1200">Explore the core features designed to enhance usability, streamline tasks, and elevate user experiences with efficient, intuitive functionality across all devices.</p>
+                        </div>
+                        <!--=== Feature Wrapper ===-->
+                        <div class="flex flex-wrap justify-center gap-[30px] mt-[70px]">
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="800">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon1.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">06 Homepages</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="1000">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon2.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">20+ Inner pages</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="1200">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon3.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Fully Responsive</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="1400">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon4.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Built With Tailwind</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="1600">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon5.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Slick Slider</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="1800">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon6.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Clean Coded</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2000">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon7.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Cross Browser</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2200">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon8.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Google Fonts</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2400">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon9.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Modern Design</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2600">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon10.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Easy Customize</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2700">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon11.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">404 Error Page</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2800">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon12.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Contact Form</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="2900">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon13.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">Well Documentation</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-[220px] w-full h-[200px] flex justify-center items-center rounded-[10px] bg-white shadow card-small group" data-aos="fade-up" data-aos-duration="3000">
+                                <!--=== Feature Item ===-->
+                                <div class="flex flex-col items-center gap-5">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon14.png" 
+                                             alt="Icon" 
+                                             class="transform rotate-0 transition-transform duration-1000 group-hover:rotate-180">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-[16px] text-secondaryColor font-Jakarta font-semibold">24/7 Support</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                <!--====== End Features Section ======-->
+                <!--====== Start Preview InnerPages Section  ======-->
+                <section class="max-w-[90%] mx-auto py-[130px]">
+                    <!--=== Item Heading ===-->
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h4 class="text-[22px] text-secondaryColor font-Jakarta font-bold">Inner Pages</h4>
+                        </div>
+                        <div class="item-button">
+                            <div class="innerpages-arrows"></div>
+                        </div>
+                    </div>
+
+                    <div class="h-[1px] bg-gray-300 mt-[30px]"></div>
+                    <!--=== Innerpage Slider ===-->
+                    <div class="inner-page-slider mt-10">
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_1.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">About Company</h4>
+                                <a href="./pages/about.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_2.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Team Member</h4>
+                                <a href="./pages/team.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+
+            
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_3.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Team Details</h4>
+                                <a href="./pages/team-details.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_4.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Services</h4>
+                                <a href="./pages/services.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_5.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Service Details</h4>
+                                <a href="./pages/service-details.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                        
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_6.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Pricing</h4>
+                                <a href="../pages/pricing.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_7.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Faqs</h4>
+                                <a href="./pages/faqs.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_8.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Project Grid</h4>
+                                <a href="./pages/project-grid.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                    
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_9.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Project Masonry</h4>
+                                <a href="../pages/project-masonry.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_10.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Project List</h4>
+                                <a href="./pages/project-list.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                        
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_11.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Project Details</h4>
+                                <a href="../pages/project-details.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                        
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_12.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Blog Standard</h4>
+                                <a href="./pages/blog-standard.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_13.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Blog Details</h4>
+                                <a href="../pages/blog-details.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_14.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Shops</h4>
+                                <a href="./pages/shops.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_15.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Shop Details</h4>
+                                <a href="./pages/shop-details.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_16.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Cart</h4>
+                                <a href="./pages/cart.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_17.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Checkout</h4>
+                                <a href="../pages/checkout.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_18.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">Contact Us</h4>
+                                <a href="./pages/contact.html"  target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+
+                       
+                        <!--=== Preview Item ===-->
+                        <div class="bg-white rounded-[20px] shadow-card md:p-10 p-5">
+                            <div>
+                                <img class="rounded-[14px]" src="assets/images/i_19.jpg" alt="Home">
+                            </div>
+                            <div class="flex justify-between items-center mt-10">
+                                <h4 class="md:text-[18px] text-[16px] text-secondaryColor font-Jakarta font-bold">404</h4>
+                                <a href="./pages/404.html" target="_blank" class="inline-block bg-secondaryColor md:px-6 px-4 md:py-3 py-2 rounded-full text-white text-[14px] font-bold font-Jakarta hover:bg-primary duration-300 ease-in-out">View Demo<i class="flaticon-right-arrow pl-2"></i></a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+                <!--====== End Preview InnerPages Section  ======-->
+                <!--====== Start Preview Responsive Section  ======-->
+                <section class="bg-[#FFFBFB] py-[130px]">
+                    <div class="custom-container">
+                        <div class="text-center">
+                            <h2 class="text-anm">Responsive Layout for any device</h2>
+                        </div>
+                        <div class="flex flex-wrap justify-center gap-6 mt-[70px]">
+                            <div class="md:w-[250px] w-full h-[230px] bg-white shadow-card rounded-xl flex justify-center items-center">
+                                <div class="flex flex-col items-center gap-5" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon15.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="text-[20px] text-secondaryColor font-Jakarta font-semibold">Full Screen Layout</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:w-[250px] w-full h-[230px] bg-white shadow-card rounded-xl flex justify-center items-center">
+                                <div class="flex flex-col items-center gap-5" data-aos="fade-up" data-aos-duration="1300">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon16.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="text-[20px] text-secondaryColor font-Jakarta font-semibold">Notebook Layout</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:w-[250px] w-full h-[230px] bg-white shadow-card rounded-xl flex justify-center items-center">
+                                <div class="flex flex-col items-center gap-5" data-aos="fade-up" data-aos-duration="1600">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon17.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="text-[20px] text-secondaryColor font-Jakarta font-semibold">Tablet Layout</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[250px] w-full h-[230px] bg-white shadow-card rounded-xl flex justify-center items-center">
+                                <div class="flex flex-col items-center gap-5" data-aos="fade-up" data-aos-duration="1700">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/icon18.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="text-[20px] text-secondaryColor font-Jakarta font-semibold">Mobile Layout</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                <!--====== End Preview Responsive Section  ======-->
+                <!--====== Start Footer Area  ======-->
+                <footer class="bg-[#18191B] py-[130px]">
+                    <div class="custom-container">
+                        <!--=== Text Box ===-->
+                        <div class="text-center">
+                            <span class="sub-heading-btn text-white bg-[#303032]" data-aos="fade-up" data-aos-duration="1200"><i class="flaticon-up-right-arrow text-primary text-[24px]"></i>Updates, Premium Support.</span>
+                            <h2 class="text-anm text-white mt-7">Attract clients with impressive and impactful design work</h2>
+                            <div class="mt-12" data-aos="fade-up" data-aos-duration="1400">
+                                <a href="https://themeforest.net/item/sasly-multipurpose-landing-page-html-template/55206888" target="_blank" class="bg-primary rounded-full px-10 py-4 text-[16px] text-white font-Jakarta font-bold">Purchase Now<i class="flaticon-shopping-cart pl-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--====== End Footer Area  ======-->
+            </div>
+        </div>
+        <!--====== Jquery js ======-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--====== Slick js ======-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--====== Gsap Js ======-->
+        <script src="assets/js/gsap/gsap.min.js"></script>
+        <script src="assets/js/gsap/SplitText.min.js"></script>
+        <script src="assets/js/gsap/ScrollTrigger.min.js"></script>
+        <script src="assets/js/gsap/ScrollSmoother.min.js"></script>
+        <!--====== Aos js ======-->
+        <script src="assets/js/aos.js"></script>
+        <!--====== Main js ======-->
+        <script src="assets/js/theme.js"></script>
+    </body>
+</html>

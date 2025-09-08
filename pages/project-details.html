@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="Sasly is a flexible and professional Multipurpose HTML template for a landing page needs including SaaS, software, fintech, Ai, E-learning, creative agencies, websites.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Sasly - Multipurpose Landing Page HTML Template</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="../common/fonts/flaticon/flaticon_sasly.css">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="../common/fonts/fontawesome/css/all.min.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/slick.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/nice-select.css">
+    <!--====== Magnific-popup css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/magnific-popup.css">
+    <!--====== Jquery UI css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/jquery-ui.min.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/aos.css">
+
+    <!--====== common css ======-->
+    <link rel="stylesheet" href="../common/css/index.css">
+    <!--====== line animation css ======-->
+    <link rel="stylesheet" href="../common/css/line_animation.css">
+    <!--====== Tailwind css ======-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--====== Tailwind config ======-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F14F44',
+                        primaryBlack: '#1F1F1F',
+                        gray: '#F0F2F4',
+                        headingColor: '#111111',
+                        textColor: '#696969',
+                        borderColor: 'rgb(16 16 16 / 10%)',
+                        'primary-black-bg': '#1F1F1F',
+                        'sectionBtnColor': '#FEEEED'
+
+                    },
+
+                    fontFamily: {
+                        Jakarta: ['Plus Jakarta Sans', 'serif'],
+                        Manrope: ['Manrope', 'serif'],
+                    },
+                    boxShadow: {
+                        'nav-shadow': '10px 4px 60px rgba(157, 157, 157, 0.25)',
+                    },
+                    filter: {
+                        'custom-shadow': 'drop-shadow(10px 4px 60px red)',
+                    },
+
+                    screens: {
+                        'xs-screen': { min: '375px' },
+                        's-screen': { min: '575px' },
+                        'md-screen': { min: '768px' },
+                        'lg-screen': { min: '992px' },
+                        'xl-screen': { min: '1201px' },
+                        '2xl-screen': { min: '1300px' },
+                        '3xl-screen': { min: '1451px' },
+                    },
+
+                },
+
+            },
+            plugins: [
+                function ({ addBase }) {
+                    addBase({
+
+                        body: {
+                            '@apply leading-[30px] relative': {},
+                        },
+
+                        h1: {
+                            '@apply font-bold m-0 text-headingColor font-Jakarta md-screen:text-[52px] text-[32px]': {},
+                        },
+                        h2: {
+                            '@apply font-bold text-headingColor font-Jakarta text-[28px] leading-[35px] md-screen:text-[28px] lg-screen:text-[42px] lg-screen:leading-[55px]': {},
+                        },
+                        h3: {
+                            '@apply font-bold text-headingColor font-Jakarta text-[27px] leading-[40px]': {},
+                        },
+                        h4: {
+                            '@apply font-bold text-headingColor font-Jakarta text-[22px] leading-[34px]': {},
+                        },
+                        h5: {
+                            '@apply font-bold text-headingColor font-Jakarta text-[20px] leading-[1]': {},
+                        },
+                        h6: {
+                            '@apply font-bold text-headingColor font-Jakarta text-[16px] leading-[30px]': {},
+                        },
+                        p: {
+                            '@apply  text-textColor text-[16px] font-Manrope leading-7': {},
+                        },
+                        main: {
+                            '@apply  pt-[165px] lg-screen:pt-[275px] md-screen:pt-[200px]': {},
+                        },
+                        label: {
+                            '@apply inline-block font-Manrope': {},
+                        },
+                        '.button': {
+                            '@apply bg-primary hover:bg-black text-white font-semibold leading-[1] rounded-[8px] px-[40px] py-[22px] font-Manrope': {},
+                        },
+
+                        '.custom-container': {
+                            '@apply mx-auto px-[.8rem] md-screen:px-[1.2rem] xs-screen:max-w-[540px] s-screen:max-w-[720px] md-screen:max-w-[720px] lg-screen:max-w-[960px] xl-screen:max-w-[1200px] 3xl-screen:max-w-[1314px]': {},
+                        },
+                        '.text-box': {
+                            '@apply text-center max-w-[775px] mx-auto mb-12': {},
+                        },
+
+                        '.active': {
+                            '@apply underline text-primary md-screen:text-[20px]': {},
+                        },
+                        '.btn-active': {
+                            '@apply bg-primary text-white md-screen:text-[20px]': {},
+                        },
+                       '.nav-menu': {
+                            '@apply  lg-screen:text-[16px] xl-screen:text-[18px] font-[600] font-Jakarta text-headingColor relative inline-block cursor-pointer after:absolute after:bottom-8 after:left-0 after:w-full after:h-[1px] after:bg-primary after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:text-primary hover:after:scale-x-100 hover:after:origin-left': {},
+                        },
+
+                        '.nav-sub-menu': {
+                            '@apply block w-[250px] pt-4  text-headingColor pl-7 hover:text-primary hover:pl-[40px] duration-300': {},
+                        },
+                        '.title': {
+                            '@apply font-semibold tracking-[1.04px] mb-[15px] leading-[40px] text-[22px] xl-screen:mb-[33px] xl-screen:text-[52px]': {},
+                        },
+
+                        '.mobile-sub-menu': {
+                            '@apply inline-block text-left text-headingColor text-[18px] pl-4 font-semibold hover:text-primary hover:transform hover:translate-x-3 duration-300': {},
+                        },
+
+                        '.hover-animation': {
+                            '@apply transition-all duration-300 ease-out': {},
+                        },
+                        '.round-7': {
+                            '@apply rounded-[7px]': {},
+                        },
+                        input: {
+                            '@apply outline-0 focus:outline-0': {},
+                        },
+                        textarea: {
+                            '@apply outline-0 focus:outline-0': {},
+                        },
+                    });
+                },
+            ],
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <!--====== Start Preloader ======-->
+    <div class="preloader fixed inset-0 flex items-center justify-center bg-white !z-[999999999999] ">
+        <div class="loader">
+            <img class="w-full round-7" src="assets/images/loader.png" alt="loader">
+        </div>
+    </div>
+    <!--====== End Preloader ======-->
+    <!--====== Start Overlay ======-->
+    <div class="offcanvas__overlay"></div>
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-[#151515] bg-opacity-80 hidden z-40">
+    </div>
+    <!--=== Start  Header Area  ===-->
+    <header class="w-full absolute top-0 left-0 !z-[99999]">
+        <!--===  Header Top  ===-->
+        <div class="bg-primary w-full h-[90px] xl-screen:block hidden">
+            <div class="max-w-[96%] mx-auto">
+                <div class="flex justify-between items-center pt-2 px-5 w-full">
+
+                    <!--===  Top Left  ===-->
+                    <div class="flex items-center xl-screen:gap-[20px] gap-3">
+                        <span
+                            class="text-white 2xl-screen:text-[14px] xl-screen:text-[12px] font-Manrope font-medium ">Welcome
+                            to <span class="font-bold">Sasly</span>, modern business landing pages</span>
+                        <span
+                            class="text-white 2xl-screen:text-[14px] xl-screen:text-[12px] font-Manrope font-[500] flex items-center gap-[10px]"><i
+                                class="fas fa-envelope"></i><a class="font-[500]"
+                                href="mailto:support@gmail.com">support@gmail.com</a></span>
+                        <span
+                            class="text-white 2xl-screen:text-[14px] xl-screen:text-[12px] font-Manrope font-bold flex items-center gap-[10px] ml-[10px]"><i
+                                class="fas fa-phone"></i>Call : <a class="font-[500]" href="tel:000(123)4588">000 (123)
+                                45 88</a></span>
+                    </div>
+
+
+                    <!--===  Top Right  ===-->
+                    <div class="flex 3xl-screen:gap-[30px] gap-5">
+                        <ul class="flex items-center 3xl-screen:gap-[30px] gap-4">
+                            <li><a class="text-white 2xl-screen:text-[16px] xl-screen:text-[14px] font-Manrope font-normal hover:underline duration-200"
+                                    href="#">Company</a></li>
+                            <li><a class="text-white 2xl-screen:text-[16px] xl-screen:text-[14px] font-Manrope font-normal hover:underline duration-200"
+                                    href="#">FAQs</a></li>
+                            <li><a class="text-white 2xl-screen:text-[16px] xl-screen:text-[14px] font-Manrope font-normal hover:underline duration-200"
+                                    href="#">Support</a></li>
+                            <li><a class="text-white 2xl-screen:text-[16px] xl-screen:text-[14px] font-Manrope font-normal hover:underline duration-200"
+                                    href="#">Team</a></li>
+                            <li><a class="bg-white h-[4px] w-[4px] rounded-full block" href="#"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="size-[6px] bg-white rounded-full" href=""></a></li>
+                        </ul>
+                        <ul class="flex items-center gap-[10px]">
+                            <li><a class="size-[25px] bg-[rgba(255,255,255,0.05)] text-white border-[1px] border-[rgba(255,255,255,0.10)] flex justify-center items-center rounded-full hover:bg-white hover:text-primary duration-300"
+                                    href="#"><i class="fab fa-facebook-f text-[10px]"></i></a></li>
+                            <li><a class="size-[25px] bg-[rgba(255,255,255,0.05)] text-white border-[1px] border-[rgba(255,255,255,0.10)] flex justify-center items-center rounded-full hover:bg-white hover:text-primary duration-300"
+                                    href="#"><i class="fab fa-twitter text-[10px]"></i></a></li>
+                            <li><a class="size-[25px] bg-[rgba(255,255,255,0.05)] text-white border-[1px] border-[rgba(255,255,255,0.10)] flex justify-center items-center rounded-full hover:bg-white hover:text-primary duration-300"
+                                    href="#"><i class="fab fa-linkedin-in text-[10px]"></i></a></li>
+                            <li><a class="size-[25px] bg-[rgba(255,255,255,0.05)] text-white border-[1px] border-[rgba(255,255,255,0.10)] flex justify-center items-center rounded-full hover:bg-white hover:text-primary duration-300"
+                                    href="#"><i class="fab fa-youtube text-[10px]"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--====  Header Navigation  ===-->
+        <div
+            class="bg-white mx-[30px]  px-6 md-screen:px-[30px] xl-screen:px-[50px] rounded-[15px] shadow-nav-shadow lg-screen:block lg-screen:mt-[20px] hidden xl-screen:mt-[-40px] mt-0">
+
+            <div class="flex justify-between items-center">
+                <!--====  Site Branding  ===-->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-main.png"
+                            alt="Brand Logo"></a>
+                </div>
+
+
+
+                <!--=== Main Menu ===-->
+                <nav class="font-Jakarta">
+                    <ul class="flex items-center gap-[18px] xl-screen:gap-[30px]">
+
+
+
+                        <li class="relative group py-[30px] cursor-pointer nav-menu">
+                            <a href="#">Home<i class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i>
+                            </a>
+
+                            <ul class="absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out 
+                                group-hover:opacity-100 group-hover:visible group-hover:top-[90px] bg-white pb-5 text-headingColor text-[18px] font-semibold 
+                                shadow-lg rounded-md">
+                                <li><a href="../home-business/index.html" class="nav-sub-menu">Business</a></li>
+                                <li><a href="../home-software/index.html" class="nav-sub-menu">Software</a></li>
+                                <li><a href="../home-ai/index.html" class="nav-sub-menu">Home AI</a></li>
+                                <li><a href="../home-elearning/index.html" class="nav-sub-menu">E-learning</a></li>
+                                <li><a href="../home-fintech/index.html" class="nav-sub-menu">Fintech</a></li>
+                                <li><a href="../website-builder/index.html" class="nav-sub-menu">Website Builder</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        </li>
+
+
+
+                        <li class="py-[30px] cursor-pointer nav-menu">
+                            <a href="../pages/about.html">About</a>
+                        </li>
+
+
+
+                        <li class="relative group py-[30px] cursor-pointer nav-menu">
+                            <a href="#">Services<i
+                                    class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                            <ul class="absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out 
+                                group-hover:opacity-100 group-hover:visible group-hover:top-[90px] bg-white pb-5 text-headingColor text-[18px] font-semibold 
+                                shadow-lg rounded-md">
+                                <li><a href="../pages/services.html" class="nav-sub-menu">Our Services</a></li>
+                                <li><a href="../pages/service-details.html" class="nav-sub-menu">Service Details</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="relative group py-[30px] cursor-pointer nav-menu">
+                            <a href="#">Projects<i
+                                    class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                            <ul class="absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out 
+                                group-hover:opacity-100 group-hover:visible group-hover:top-[90px] bg-white pb-5 text-headingColor text-[18px] font-semibold 
+                                shadow-lg rounded-md">
+                                <li><a href="../pages/project-grid.html" class="nav-sub-menu">Project Grid</a></li>
+                                <li><a href="../pages/project-list.html" class="nav-sub-menu">Project List</a></li>
+                                <li><a href="../pages/project-masonry.html" class="nav-sub-menu">Project Masonry</a>
+                                </li>
+                                <li><a href="../pages/project-details.html" class="nav-sub-menu">Project Details</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+                        <li class="relative group py-[30px] cursor-pointer nav-menu">
+                            <a href="#">Blog<i class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                            <ul class="absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out 
+                                group-hover:opacity-100 group-hover:visible group-hover:top-[90px] bg-white pb-5 text-headingColor text-[18px] font-semibold 
+                                shadow-lg rounded-md">
+                                <li><a href="../pages/blog-grid.html" class="nav-sub-menu">Blog Grid</a></li>
+                                <li><a href="../pages/blog-standard.html" class="nav-sub-menu">Blog Standard</a></li>
+                                <li><a href="../pages/blog-details.html" class="nav-sub-menu">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+
+
+
+
+                        <li class="relative group py-[30px] cursor-pointer nav-menu">
+                            <a href="#">Pages<i class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i>
+                            </a>
+
+                            <ul class="absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out 
+                                group-hover:opacity-100 group-hover:visible group-hover:top-[90px] bg-white pb-5 text-headingColor text-[18px] font-semibold 
+                                shadow-lg rounded-md">
+                                <li>
+                                    <a href="../pages/team.html" class="nav-sub-menu">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/team-details.html" class="nav-sub-menu">Team Details</a>
+                                </li>
+                                <li class="relative group">
+                                    <a href="../pages/blog-details.html" id="shops" class="nav-sub-menu peer flex items-center justify-between w-full">Shops
+                                        <i class="fas fa-chevron-down mr-6 text-[16px]"></i>
+                                    </a>
+                                    <!-- Submenu for Shops -->
+                                    <ul id="shops-item"
+                                        class="absolute right-[250px] hidden w-full top-0  bg-white pb-5 !z-[999999999] text-headingColor text-[18px] font-semibold shadow-lg rounded-md  transition-all duration-300 ease-in-out transform translate-y-2">
+                                        <li><a href="../pages/shops.html" class="nav-sub-menu">Our Products</a></li>
+                                        <li><a href="../pages/shop-details.html" class="nav-sub-menu">Product
+                                                Details</a></li>
+                                        <li><a href="../pages/cart.html" class="nav-sub-menu">Cart</a></li>
+                                        <li><a href="../pages/checkout.html" class="nav-sub-menu">Checkout</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-sub-menu" href="../pages/pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="nav-sub-menu" href="../pages/faqs.html">Faqs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-sub-menu" href="../pages/contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="nav-sub-menu" href="../pages/404.html">404</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+                <!--=== Sasly Nav Button ===-->
+                <div class="">
+                    <a href="../pages/contact.html"
+                        class="bg-primary px-[22px] py-[13px] rounded-md text-white text-[14px] font-semibold flex justify-center items-center leading-[1] gap-2 border-0 hover:bg-headingColor duration-500 ease-in-out">Get
+                        A Quote<i class="far fa-angle-double-right"></i></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile and Medium Devices -->
+        <div
+            class="bg-white  rounded-[10px] !z-[99999999999999999999] shadow-nav-shadow px-4 mt-5 mx-3 font-Jakarta lg-screen:hidden block">
+            <div class="flex justify-between items-center h-[68px] md-screen:h-[80px]">
+                <!-- Site Branding -->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo-main.png" alt="Brand Logo">
+                    </a>
+                </div>
+
+                <!-- Menu Button -->
+
+                <div class="flex gap-4 items-center">
+
+                    <div class="md-screen:block hidden">
+                        <a href="../pages/contact.html"
+                            class="bg-primary px-[22px] py-[14px] rounded-md text-white text-[14px] font-semibold flex justify-center items-center leading-[1] gap-2 border-0 hover:bg-headingColor duration-500 ease-in-out">Get
+                            A Quote<i class="far fa-angle-double-right"></i></a>
+                    </div>
+
+                    <label class="relative w-12 h-[44px]  rounded-md cursor-pointer border" id="menu-btn">
+                        <input type="checkbox" class="hidden peer" />
+                        <div class=" checkmark  flex flex-col py-2 items-center justify-center gap-4">
+                            <span
+                                class="block w-[30px]  h-[2px] bg-[#111111] rounded-[3px] absolute top-[12px]  transition-all duration-300 ease-in-out peer-checked:top-1/2 peer-checked:rotate-45"></span>
+                            <span
+                                class="block w-[30px]  h-[2px] bg-[#111111] rounded-[3px] absolute top-1/2  -translate-y-1/2 transition-all duration-300 ease-in-out peer-checked:opacity-0"></span>
+                            <span
+                                class="block w-[30px]  h-[2px] bg-[#111111] rounded-[3px] absolute bottom-[12px] transition-all duration-300 ease-in-out peer-checked:bottom-1/2 peer-checked:-rotate-45"></span>
+                        </div>
+                    </label>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="fixed top-0 left-0 transform -translate-x-full w-[75%] md-screen:w-[50%] h-full overflow-y-auto bg-white p-5 shadow-lg z-50">
+            <div class="flex justify-between items-center">
+                <!-- Site Branding -->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo-main.png" alt="Brand Logo">
+                    </a>
+                </div>
+                <!-- close sidebar button -->
+                <button id="close-btn"
+                    class="size-9 rounded-md flex justify-center items-center border border-borderColor">
+                    <i class="fas fa-times text-[20px] text-textColor font-[200]"></i>
+                </button>
+            </div>
+
+
+            <ul class="mt-5 flex flex-col gap-3">
+
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button id="home-btn"
+                        class="flex justify-between items-center w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300 mt-[16px]">
+                        <span>Home</span>
+                        <i class="far fa-angle-down text-sm w-[25px]"></i>
+                    </button>
+
+                    <ul id="home-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                            href="../home-business/index.html">Business</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../home-software/index.html">Software</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../home-ai/index.html">Home
+                                AI</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../home-elearning/index.html">E-learning</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../home-fintech/index.html">Fintech</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../website-builder/index.html">Website
+                                Builder</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button
+                        class="w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>About</span>
+                    </button>
+                </li>
+
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button id="service-btn"
+                        class="flex justify-between items-center w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Services</span>
+                        <i class="far fa-angle-down text-sm w-[25px]"></i>
+                    </button>
+
+                    <ul id="service-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/services.html">Our
+                                Services</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/service-details.html">Service
+                                Details</a></li>
+                    </ul>
+                </li>
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button id="project-btn"
+                        class="flex justify-between items-center w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Projects</span>
+                        <i class="far fa-angle-down text-sm w-[25px]"></i>
+                    </button>
+
+                    <ul id="project-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/project-grid.html">Project Grid</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/project-list.html">Project List</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/project-masonry.html">Project Masonry</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/project-details.html">Project
+                                Details</a></li>
+                    </ul>
+                </li>
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button id="blogs-btn"
+                        class="flex justify-between items-center w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Blog</span>
+                        <i class="far fa-angle-down text-sm w-[25px]"></i>
+                    </button>
+
+                    <ul id="blogs-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/blog-grid.html">Blog
+                                Grid</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/blog-standard.html">Blog Standard</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/blog-details.html">Blog Details</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="border-b pb-3 border-borderColor">
+                    <button id="pages-btn"
+                        class="flex justify-between items-center w-full text-left text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Pages</span>
+                        <i class="far fa-angle-down text-sm w-[25px]"></i>
+                    </button>
+
+                    <ul id="pages-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/team.html">Our Team</a>
+                        </li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/team-details.html">Team
+                                Details</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4">
+
+                            <button id="shops-btn"
+                                class="flex justify-between items-center w-full text-left pl-4 text-headingColor text-[18px] font-semibold hover:text-primary duration-300">
+                                <span>Shops</span>
+                                <i class="far fa-angle-down text-sm w-[25px]"></i>
+                            </button>
+                            <ul id="shops-submenu" class="sub-menu hidden">
+                                <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/shops.html">Our Products</a></li>
+                                <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/shop-details.html">Product Details</a></li>
+                                <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/cart.html">Cart</a></li>
+                                <li class="pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/pricing.html">Pricing</a></li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/faqs.html">Faqs</a>
+                        </li>
+                        <li class="border-b pb-3 border-borderColor pt-4"><a class="mobile-sub-menu"
+                                href="../pages/contact.html">Contact
+                                Us</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/404.html">404</a></li>
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+
+            <!--=== Sasly Nav Button ===-->
+            <!-- for mobile  -->
+            <div class="w-[170px] mt-7 mb-10 md-screen:hidden">
+                <a href="../pages/contact.html"
+                    class="bg-primary px-[22px] py-[13px] rounded-md text-white text-[14px] font-semibold flex justify-center items-center leading-[1] gap-2 border-0 hover:bg-headingColor duration-500 ease-in-out">Get
+                    A Quote <i class="far fa-angle-double-right"></i></a>
+            </div>
+
+
+
+            <div class="md-screen:mt-10">
+                <h3 class="text-[24px] text-headingColor font-bold font-Jakarta">Follow Us</h3>
+                <ul class="flex items-center gap-[10px] mt-4">
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-facebook-f text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-twitter text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-linkedin-in text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-youtube text-[14px]"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+
+    </header>
+    <!--=== End  Header Area  ===-->
+
+
+
+    <!--======  Smooth Wrapper  ======-->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!--======  line Wrap  ======-->
+            <div class="line_wrap">
+                <div class="line_item_one"></div>
+                <div class="line_item"></div>
+                <div class="line_item"></div>
+                <div class="line_item"></div>
+                <div class="line_item"></div>
+            </div>
+            <!--======  Main  ======-->
+            <main>
+                <!--======  Start Page Banner Section  ======-->
+                <section class="pb-[80px] md-screen:pb-[130px]  custom-container">
+                    <h1 class="leading-[1] pb-[25px] text-center">Project Details</h1>
+                    <ul class="flex justify-center items-center text-[16px] font-[600] font-Manrope">
+                        <li
+                            class="after:content-['']  after:inline-block after:align-middle after:w-[5px] after:h-[5px] after:rounded-full after:bg-primary after:ml-5 after:mr-[18px]">
+                            <a class="text-textColor md-screen:text-[20px]" href="../home-business/index.html">Home</a>
+                        </li>
+                        <li class="underline text-primary md-screen:text-[20px]">Project Details</li>
+                    </ul>
+                </section>
+                <!--======  End Page Banner Section  ======-->
+
+                <!--======  Start Project Details Section  ======-->
+                <section class="project-details-ss pb-[80px]">
+                    <div class="custom-container">
+                        <!--===  Project Details Wrapper  ===-->
+                        <div class="project-details-wrapper">
+                            <!--===  Project Thumbnail  ===-->
+                            <div class="project-thumbnail">
+                                <div class="">
+                                    <div class="lg-screen:flex items-center gap-6 ">
+                                        <div class="lg-screen:w-1/2">
+                                            <div class="thumbnail mb-[30px]">
+                                                <img class="w-full round-7"
+                                                    src="assets/images/project/project-single1.jpg" alt="Project Image">
+                                            </div>
+                                        </div>
+                                        <div class="lg-screen:w-1/2">
+                                            <div class="thumbnail mb-[30px]">
+                                                <img class="w-full round-7"
+                                                    src="assets/images/project/project-single2.jpg" alt="Project Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="thumbnail mb-[65px] w-full overflow-hidden ">
+                                            <img class="w-full md-screen:w-auto h-auto rounded-7 md-screen:min-h-[550px] round-7 object-cover "
+                                             src="assets/images/project/project-single3.jpg"
+                                                alt="Project Image">
+                                            <div
+                                                class="md-screen:absolute mt-10 bottom-[30px] right-[30px] bg-primary md-screen:w-[400px] py-[20px] px-[30px] lg-screen:py-10 lg-screen:px-[50px] rounded-[15px] ">
+                                                <h4 class=" text-white  mb-[20px]">Project Info</h4>
+                                                <ul>
+                                                    <li
+                                                        class="mb-[15px] pb-[15px] border-b border-[#ffffff1a] ease-out">
+                                                        <span
+                                                            class=" text-white font-[600] text-[16px] font-Jakarta flex items-center justify-between w-full tracking-[-0.36px]">
+                                                            Clients:
+                                                            <span class="ml-auto">Justin E. Woods</span>
+                                                        </span>
+                                                    </li>
+                                                    <li
+                                                        class="mb-[15px] pb-[15px] border-b border-[#ffffff1a] ease-out">
+                                                        <span
+                                                            class=" text-white font-[600] text-[16px] font-Jakarta flex items-center justify-between w-full tracking-[-0.36px]">
+                                                            Services:
+                                                            <span class="ml-auto">Business Strategy</span>
+                                                        </span>
+                                                    </li>
+                                                    <li
+                                                        class="mb-[15px] pb-[15px] border-b border-[#ffffff1a] ease-out">
+                                                        <span
+                                                            class=" text-white font-[600] text-[16px] font-Jakarta flex items-center justify-between w-full tracking-[-0.36px]">
+                                                            Date:
+                                                            <span class="ml-auto">08 Sep 2024 </span>
+                                                        </span>
+                                                    </li>
+                                                    <li
+                                                        class="mb-[15px] pb-[15px] border-b border-[#ffffff1a] ease-out">
+                                                        <span
+                                                            class=" text-white font-[600] text-[16px] font-Jakarta flex items-center justify-between w-full tracking-[-0.36px]">
+                                                            Category:
+                                                            <span class="ml-auto">Business Services</span>
+                                                        </span>
+                                                    </li>
+                                                    <li
+                                                        class="mb-[15px] pb-[15px] border-b border-[#ffffff1a] ease-out">
+                                                        <span
+                                                            class=" text-white font-[600] text-[16px] font-Jakarta flex items-center justify-between w-full tracking-[-0.36px]">
+                                                            Location:
+                                                            <span class="ml-auto">London</span>
+                                                        </span>
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--===  Project Content  ===-->
+                            <div class="project-content">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="content">
+                                            <h3 class="title">Innovate Business Solutions</h3>
+                                            <p class="mb-10">Innovate Business Solutions is all about providing creative
+                                                and
+                                                forward-thinking strategies to help businesses thrive in a rapidly
+                                                changing world. By leveraging the latest technologies, industry
+                                                insights, and market trends, these solutions focus on transforming
+                                                traditional processes, enhancing operational efficiency, and driving
+                                                growth. Innovate Business Solutions addresses challenges with fresh
+                                                perspectives, offering tailored approaches that align with a company’s
+                                                unique goals and needs. Whether through digital transformation,
+                                                strategic planning, or process optimization, these solutions empower
+                                                businesses to stay competitive, adapt to change</p>
+                                            <ul class="mb-[60px] ">
+                                                <li class="mb-[10px] text-textColor flex items-center"><i
+                                                        class="fas fa-check-circle inline-block mr-[10px] text-primary"></i>Expert
+                                                    Guidance Consultants
+                                                    provide specialized knowledge and expertise</li>
+                                                <li class="mb-[10px] text-textColor flex items-center"><i
+                                                    class="fas fa-check-circle inline-block mr-[10px] text-primary"></i>Consultants
+                                                    offer a fresh,
+                                                    unbiased perspective, identifying</li>
+                                                <li class="mb-[10px] text-textColor flex items-center"><i
+                                                    class="fas fa-check-circle inline-block mr-[10px] text-primary"></i>Business
+                                                    consultants tailor
+                                                    strategies recommendations specifically</li>
+                                            </ul>
+                                            <div class="lg-screen:flex lg-screen: gap-6 lg-screen:items-center">
+                                                <div class="lg-screen:w-8/12">
+                                                    <h3 class="title">How To Benefits Our Projects</h3>
+                                                    <p class="mb-10">By leveraging the latest technologies, industry
+                                                        insights market
+                                                        trends, these solutions focus transforming traditional
+                                                        processes, enhancing operational efficiency driving growth.
+                                                        Innovate Business Solutions addresses
+                                                        challenges with fresh perspectives, offering tailored approaches
+                                                        that align with a company</p>
+                                                    <h5 class="mb-[10px] ">Clear Objectives</h5>
+                                                    <p class="mb-10">Define specific goals that align with your business
+                                                        needs.
+                                                        Understanding the purpose of the project ensures that you
+                                                        maximize its value.</p>
+                                                    <h5 class="mb-[10px] ">Collaborative Engagement</h5>
+                                                    <p class="mb-10">Stay actively involved throughout the project by
+                                                        collaborating
+                                                        with our team, providing feedback, and sharing insights that
+                                                        help refine the solution.</p>
+                                                </div>
+                                                <div class="lg-screen:w-4/12">
+                                                    <div class="block-image mb-[30px]">
+                                                        <img class="w-full round-7"
+                                                            src="assets/images/project/project-single4.jpg"
+                                                            alt="project image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Results & Metrics</h3>
+                                            <p>Results & Metrics are essential for evaluating the success of any
+                                                business project or initiative. They provide quantifiable data to
+                                                measure performance, track progress, and determine the impact of
+                                                strategies implemented. Key metrics can include financial performance,
+                                                such as revenue growth or cost savings, as well as operational
+                                                improvements like efficiency gains, customer satisfaction, or market
+                                                share. Establishing clear metrics from the beginning ensures that
+                                                results are aligned with the project’s goals and objectives. By
+                                                regularly monitoring these metrics, businesses can identify strengths,
+                                                address weaknesses, and make informed decisions to continuously improve
+                                                outcomes and drive success.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--======  End Project Details Section  ======-->
+                <!--====== Start CTA Section ======-->
+                <section class="bg-cover bg-no-repeat z-1 pt-[90px]" style="
+background: linear-gradient(180deg, rgba(31, 31, 31, 0.30) 25.89%, #1F1F1F 92.7%), 
+url('assets/images/bg/cta-bg1.jpg')
+">
+                    <div class="custom-container">
+                        <div class="xl-screen:flex justify-between">
+                            <div>
+                                <!--=== Section Content Box ===-->
+                                <div class="mb-[50px]">
+                                    <div class=" text-white mb-[55px]">
+                                        <h2
+                                            class="text-center xl-screen:text-left text-white font-Jakarta 2xl:leading-[65px] md-screen:leading-[55px] leading-10">
+                                            <span class="font-[200]">Need Consultations?</span> <br>
+                                            We Are Ready to Providing<br>
+                                            Amazing Business Idea
+                                        </h2>
+                                    </div>
+                                    <div class="flex justify-center xl-screen:justify-start">
+                                        <div class="button" data-aos="fade-up" data-aos-duration="1200">
+                                            <a href="contact.html" class="flex gap-2 items-center font-bold">Get
+                                                Consultations <i class="far fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pb-[90px]">
+                                    <div
+                                        class="flex flex-col gap-[10px] md-screen:flex-row xl-screen:flex-col  md-screen:gap-6 lg-screen:flex-row lg-screen:justify-between  lg-screen:gap-[10px]">
+                                        <!-- === Iconic Box === -->
+                                        <div class="w-full" data-aos="fade-down" data-aos-duration="1000">
+                                            <div
+                                                class="max-w-[410px]  3xl-screen:px-[50px] mx-auto lg-screen:px-10 px-[30px] lg-screen:py-[30px] py-[20px] bg-white rounded-[10px] group hover:bg-primary duration-500 transform ease-in-out">
+                                                <div>
+                                                    <h4 class="flex">
+                                                        <i
+                                                            class="flaticon-award-symbol text-primary inline-block text-[55px] leading-[30px] group-hover:text-white transition-all duration-700 mr-[35px] mt-1">
+                                                        </i><span
+                                                            class="text-[18px] text-secondaryColor font-bold font-Jakarta leading-[30px] tracking-[-0.48px] group-hover:text-white duration-300">We
+                                                            Are Award Winning Company</span>
+                                                    </h4>
+                                                    <p
+                                                        class="leading-[30px] w-full 2xl:mt-[30px] mt-[16px] group-hover:text-white duration-200">
+                                                        Pinnacle <span class="font-bold">Business Solution</span>
+                                                        commitment
+                                                        excellence and innovation earned </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full" data-aos="fade-up" data-aos-duration="1300">
+                                            <div
+                                                class="max-w-[410px] 3xl-screen:px-[50px] mx-auto lg-screen:px-10 px-[30px] lg-screen:py-[30px] py-[20px] bg-white rounded-[10px] group hover:bg-primary duration-500 transform ease-in-out">
+                                                <div>
+                                                    <h4 class="flex">
+                                                        <i
+                                                            class="flaticon-professional-development text-primary inline-block text-[55px] leading-[30px] group-hover:text-white transition-all duration-700 mr-[35px] mt-1">
+                                                        </i><span
+                                                            class="text-[18px] text-secondaryColor font-bold font-Jakarta leading-[30px] tracking-[-0.48px] group-hover:text-white duration-300">Professionals
+                                                            and Expert Support</span>
+                                                    </h4>
+                                                    <p
+                                                        class="leading-[30px] w-full 2xl:mt-[30px] mt-[16px] group-hover:text-white duration-200">
+                                                        Pinnacle <span class="font-bold">Business Solution</span>
+                                                        commitment
+                                                        excellence and innovation earned </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--====== End CTA Section ======-->
+
+            </main>
+            <!--=== Footer Area ===-->
+            <footer class="pt-[104px] bg-primary-black-bg -mt-1">
+                <!--=== Footer Widget Area ===-->
+                <div class="custom-container">
+                    <div>
+                        <div
+                            class="lg-screen:flex lg-screen:flex-nowrap md-screen:flex-wrap xl-screen:gap-[87px] gap-4">
+                            <div class="flex justify-between items-center lg-screen:gap-0">
+                                <div class="md-screen:w-[284px] w-full">
+                                    <!--=== Footer Widget ===-->
+                                    <div class="footer-widget footer-about-widget" data-aos="fade-up"
+                                        data-aos-duration="1200">
+                                        <div>
+                                            <div>
+                                                <a href="index.html"><img
+                                                        src="assets/images/logo/logo-white.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <p class="mt-[30px] text-[#B8B8B8]">We take the time to understand your
+                                                unique needs a goals, offering tailored advice that drives real results.
+                                            </p>
+                                            <ul class="flex items-center gap-[10px] mt-6">
+                                                <li><a class="size-[45px] bg-[#2A2A2A] border-[1px] border-borderColor rounded-full text-[16px] flex justify-center items-center text-white hover:bg-primary duration-300 hover:text-white"
+                                                        href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a class="size-[45px] bg-[#2A2A2A] border-[1px] border-borderColor rounded-full text-[16px] flex justify-center items-center text-white hover:bg-primary duration-300 hover:text-white"
+                                                        href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a class="size-[45px] bg-[#2A2A2A] border-[1px] border-borderColor rounded-full text-[16px] flex justify-center items-center text-white hover:bg-primary duration-300 hover:text-white"
+                                                        href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a class="size-[45px] bg-[#2A2A2A] border-[1px] border-borderColor rounded-full text-[16px] flex justify-center items-center text-white hover:bg-primary duration-300 hover:text-white"
+                                                        href="#"><i class="fab fa-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="md-screen:ml-[85px] lg-screen:w-[380px] md-screen:w-[410px] w-full lg-screen:mt-0 mt-[30px] lg-screen:hidden md-screen:block hidden">
+                                    <!--=== Footer Widget ===-->
+                                    <div class="footer-widget footer-newsletter-widget mb-[40px]" data-aos="fade-up"
+                                        data-aos-duration="1800">
+                                        <div>
+                                            <h4
+                                                class="lg-screen:text-[20px] md-screen:text-[24px] text-[20px] text-white font-semibold font-Jakarta">
+                                                Subscribe Newsletter</h4>
+                                            <p class="text-[#B8B8B8] mt-[30px]">Subscribe our newsletter to get more
+                                                updates </p>
+                                            <form>
+                                                <div class="relative mt-10">
+                                                    <input type="email"
+                                                        class="h-[54px] bg-[#2A2A2A] rounded-[10px] border-[1.2px] border-borderColor w-full pl-8 text-[14px] text-[#B8B8B8] outline-0"
+                                                        placeholder="Email Address" name="email" required>
+                                                    <label><i
+                                                            class="far fa-envelope text-[14px] text-white absolute top-5 left-3"></i></label>
+                                                    <button
+                                                        class="bg-primary px-5 py-[10px] rounded-md text-white text-[14px] font-semibold font-Jakarta absolute top-[7px] right-3">Subscribe
+                                                        <i class="far fa-angle-double-right"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <!--=== Footer Widget ===-->
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="md-screen:flex gap-4 lg-screen:mt-0 md-screen:mt-[50px] mt-[30px]">
+                                        <div class="w-full">
+                                            <div>
+                                                <h4
+                                                    class="lg-screen:text-[20px] md-screen:text-[24px] text-[20px] text-white font-semibold font-Jakarta">
+                                                    Services</h4>
+                                                <ul
+                                                    class="mt-[20px] text-[16px] text-[#B8B8B8] font-normal font-Manrope leading-[30px] flex flex-col md-screen:gap-[12px] gap-3">
+                                                    <li>
+                                                        <a class="hover:text-primary duration-300" href="#">Business
+                                                            Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="hover:text-primary duration-300" href="#">Investment
+                                                            Planning</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="hover:text-primary duration-300" href="#">Marketing
+                                                            Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="hover:text-primary duration-300" href="#">Banking
+                                                            & Insurance</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="hover:text-primary duration-300" href="#">Planning &
+                                                            Research</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col w-full md-screen:mt-0 mt-[20px]">
+                                            <div>
+                                                <h4
+                                                    class="lg-screen:text-[20px] md-screen:text-[24px] text-[20px] text-white font-semibold font-Jakarta mb-[20px]">
+                                                    Locations</h4>
+                                                <p class=" text-[16px] text-[#B8B8B8] font-normal font-Manrope
+                                                leading-7">55 Main Street, 2nd block
+                                                    Melbourne, Australia</p>
+                                            </div>
+                                            <div class="mt-[40px]">
+                                                <h4
+                                                    class="lg-screen:text-[20px] md-screen:text-[24px] text-[20px] text-white font-semibold font-Jakarta mb-[20px]">
+                                                    Get In Touch</h4>
+                                                <p><a class="text-[#B8B8B8] hover:text-primary duration-300"
+                                                        href="mailto:support@gmail.com">support@gmail.com</a></p>
+                                                <p><a class="text-[#B8B8B8] hover:text-primary duration-300"
+                                                        href="tel:+880(123)456588">+880 (123) 456 588</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="md-screen:w-[380px] w-full lg-screen:mt-0 mt-[30px] lg-screen:block md-screen:hidden block">
+                                <!--=== Footer Widget ===-->
+                                <div class="footer-widget footer-newsletter-widget mb-[40px]" data-aos="fade-up"
+                                    data-aos-duration="1800">
+                                    <div>
+                                        <h4
+                                            class="lg-screen:text-[20px] md-screen:text-[24px] text-[20px] text-white font-semibold font-Jakarta">
+                                            Subscribe Newsletter</h4>
+                                        <p class="text-[16px] text-[#B8B8B8] font-normal font-Manrope mt-[30px]">
+                                            Subscribe our newsletter to get more updates </p>
+                                        <form>
+                                            <div class="relative mt-7">
+                                                <input type="email"
+                                                    class="h-[54px] bg-[#2A2A2A] rounded-[10px] border-[1.2px] border-borderColor w-full pl-8 text-[14px] text-[#B8B8B8]"
+                                                    placeholder="Email Address" name="email" required>
+                                                <label><i
+                                                        class="far fa-envelope text-[14px] text-white absolute top-5 left-3"></i></label>
+                                                <button
+                                                    class="xl-screen:block hidden bg-primary px-5 py-[6px] hover:bg-black rounded-md text-white text-[14px] font-semibold font-Jakarta absolute top-[7px] right-3">Subscribe
+                                                    <i class="far fa-angle-double-right"></i></button>
+                                            </div>
+                                            <button
+                                                class="block xl-screen:hidden bg-primary -mt-[14px] px-5 py-[6px] hover:bg-black rounded-md text-white text-[14px] font-semibold font-Jakarta">Subscribe
+                                                <i class="far fa-angle-double-right"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=== Footer Copyright ===-->
+                <div class="border-t-[1px] border-[rgba(255,255,255,0.10)] mt-[100px] relative">
+                    <div class="custom-container">
+                        <div class="lg-screen:flex justify-between items-center font-Manrope py-[35px]">
+                            <div>
+                                <p class="text-[#B8B8B8] text-center lg-screen:text-left">&copy; 2024 <span
+                                        class="text-primary">Sasly</span> - All rights reserved.</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <ul
+                                        class="flex items-center justify-center lg-screen:justify-start md-screen:gap-6 gap-4 mt-1 lg-screen:mt-0">
+                                        <li><a class="text-[#B8B8B8] text-[16px] font-normal hover:text-primary hover:underline duration-200"
+                                                href="#">Home</a></li>
+                                        <li><a class="text-[#B8B8B8] text-[16px] font-normal hover:text-primary hover:underline duration-200"
+                                                href="#">About</a></li>
+                                        <li><a class="text-[#B8B8B8] text-[16px] font-normal hover:text-primary hover:underline duration-200"
+                                                href="#">Privacy Policy</a></li>
+                                        <li><a class="text-[#B8B8B8] text-[16px] font-normal hover:text-primary hover:underline duration-200"
+                                                href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====== Back To Top  ======-->
+                        <a href="#"
+                            class="w-[50px] h-[50px] rounded-full text-white bg-primary flex justify-center items-center text-[18px] cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-[-25px]">
+                            <i class="fas fa-angle-up"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </footer>
+            <!--====== End Footer  ======-->
+
+        </div>
+    </div>
+    <!--====== Jquery js ======-->
+    <script src="../common/js/plugins/jquery-3.7.1.min.js"></script>
+    <!--====== Gsap Js ======-->
+    <script src="../common/js/plugins/gsap/gsap.min.js"></script>
+    <script src="../common/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="../common/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="../common/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="../common/js/plugins/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="../common/js/plugins/jquery.magnific-popup.min.js"></script>
+    <!--====== Nice-select js ======-->
+    <script src="../common/js/plugins/jquery.nice-select.min.js"></script>
+    <!--====== Aos js ======-->
+    <script src="../common/js/plugins/aos.js"></script>
+    <!--====== Main js ======-->
+    <script src="../common/js/common_script.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/*---
+
+-----------------------------------------------------------------------------------
+Template Name: Sasly - Multipurpose Landing Page HTML Template
+Page Name: Home AI
+Description: Main landing page for AI products, showcasing key features, benefits, and CTA sections.
+Author: Pixelfit
+Version: 1.0 
+-----------------------------------------------------------------------------------
+
+---*/
+/* Common CSS */
+.hero-content h1 span b {
+  background: -webkit-gradient(linear, left top, right top, from(#A150C4), to(#8244D9));
+  background: linear-gradient(90deg, #A150C4 0%, #8244D9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Hero Section CSS */
+.bottom-bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(125, 66, 220, 0.07)), color-stop(69.58%, rgba(125, 66, 220, 0)));
+  background: linear-gradient(0deg, rgba(125, 66, 220, 0.07) 0%, rgba(125, 66, 220, 0) 69.58%);
+}
+
+
+.company-slider .slick-slide {
+  margin: 0 15px;
+} 
+.testimonial-slider .slick-slide {
+  margin: 0 15px;
+}
+.testimonial-slider-rtl .slick-slide {
+  margin: 0 15px;
+}
+
+
+.animate-float-bob-x {
+  -webkit-animation-name: float-bob-x;
+          animation-name: float-bob-x;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.animate-float-bob-y {
+  -webkit-animation-name: float-bob-y;
+          animation-name: float-bob-y;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes float-bob-x {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes float-bob-x {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+}
+@-webkit-keyframes float-bob-y {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes float-bob-y {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+
+
+.zoomInOut {
+  -webkit-animation: zoomInOut 6s linear infinite;
+          animation: zoomInOut 6s linear infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+/* Pricing Section CSS */
+.pricing-ai .pricing-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.pricing-ai .pricing-wrapper:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 940px;
+  width: 100%;
+  height: 290px;
+  border-radius: 219.5px;
+  background: radial-gradient(50% 50% at 50% 50.77%, #FE7587 0%, #7D42DC 100%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  z-index: -1;
+}
+
+
+
