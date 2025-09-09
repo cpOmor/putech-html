@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="Main landing page for AI products, showcasing key features, benefits, and CTA sections.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Sasly - Multipurpose Landing Page HTML Template</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!--====== FlatIcon css ======-->
+    <link rel="stylesheet" href="../common/fonts/flaticon/flaticon_sasly.css">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="../common/fonts/fontawesome/css/all.min.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/slick.css">
+    <!--====== Magnific-popup css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/magnific-popup.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="../common/css/plugins/aos.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="../common/css/index.css">
+    <link rel="stylesheet" href="../common/css/line_animation.css">
+    <!--====== AnimatedHeadline css ======-->
+    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--====== Tailwind css ======-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--====== Tailwind config ======-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A0C00',
+                        secondaryColor: '#100701',
+                        bgPrimary: '#100701',
+                        textColor: '#666A73',
+                        primaryBlue: '#4F70E6',
+                        sectionBg: '#F2F4F8',
+                        primaryBorder: '#CCC',
+                    },
+                    fontFamily: {
+                        primary: ['Space Grotesk', 'sans-serif'],
+                        secondary: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        faq: '0px 0px 60px 0px rgba(0, 0, 0, 0.05)',
+                        contact: '0px 4px 60px 0px rgba(0, 0, 0, 0.05)',
+                        about: '0px 0px 60px 0px rgba(0, 0, 0, 0.05)',
+                        navbar: '0px 4px 60px 0px rgba(38, 18, 8, 0.05)',
+                    },
+                    backgroundImage: {
+                        'blog-overlay': 'linear-gradient(180deg, rgba(38, 18, 8, 0.00) 44.52%, #261208 92.46%)',
+                        'banner-overlay': 'linear-gradient(80deg, rgba(16, 7, 1, 0.79) 36.94%, rgba(118, 52, 7, 0.00) 78.99%)',
+                    },
+                }
+            },
+            plugins: [
+                function ({ addBase }) {
+                    addBase({
+                        '*': {
+                            margin: '0',
+                            padding: '0',
+                            boxSizing: 'border-box',
+                        },
+                        html: {
+                            scrollBehavior: 'smooth',
+                        },
+                        body: {
+                            fontFamily: "'Space Grotesk', sans-serif",
+                        },
+                        h1: {
+                            '@apply text-primary xl:text-[100px] lg:text-[70px] md:text-[50px] text-[40px] xl:leading-[113px] lg:leading-[85px] md:leading-[58px] leading-[50px] font-primary font-normal tracking-[-2px]': {},
+                        },
+                        h2: {
+                            '@apply text-secondaryColor xl:text-[60px] xl:leading-[68px] md:text-[50px] md:leading-[56px] text-[28px] leading-[36px] font-primary font-bold tracking-[-1.48px]': {},
+                        },
+                        h3: {
+                            '@apply md:text-[32px] text-[24px] text-secondaryColor md:leading-[40px] leading-8 font-medium font-primary': {},
+                        },
+                        h4: {
+                            '@apply md:text-[24px] text-[22px] text-secondaryColor font-medium leading-[28px] md:leading-[36px] font-primary': {},
+                        },
+                        h5: {
+                            '@apply text-[18px] text-secondaryColor font-bold leading-7 font-primary': {},
+                        },
+                        h6: {
+                            '@apply text-[14px] text-secondaryColor font-normal font-primary': {},
+                        },
+                        p: {
+                            '@apply text-textColor text-[16px] font-normal leading-7 font-secondary tracking-[-0.36px]': {},
+                        },
+                        '.section-gap': {
+                            '@apply lg:mt-[120px] md:mt-[80px] mt-[60px]': {},
+                        },
+                        '.section-label': {
+                            '@apply text-[16px] font-bold font-primary text-primaryBlue uppercase tracking-[2.56px] leading-7': {},
+                        },
+                        '.container': {
+                            '@apply md:max-w-[750px] lg:max-w-[1024px] xl:max-w-[1290px] mx-auto px-3 lg:px-5 2xl:px-0': {},
+                        },
+                        '.nav-menu': {
+                            '@apply text-[14px] text-secondaryColor font-primary font-bold uppercase leading-6 relative inline-block cursor-pointer after:absolute after:bottom-[20px] after:left-0 after:w-full after:h-[1px] after:bg-primaryBlue after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:text-primaryBlue hover:after:scale-x-100 hover:after:origin-left cursor-pointer py-[20px]': {},
+                        },
+                        '.nav-menu-two': {
+                            '@apply text-[14px] text-white font-primary font-bold uppercase leading-6 relative inline-block cursor-pointer after:absolute after:bottom-[26px] after:left-0 after:w-full after:h-[1px] after:bg-primaryBlue after:scale-x-0 after:origin-right after:transition-transform after:duration-500 hover:text-primaryBlue hover:after:scale-x-100 hover:after:origin-left': {},
+                        },
+                        '.nav-sub-menu': {
+                            '@apply block w-[250px] font-primary pt-4 pl-7 hover:text-primaryBlue hover:pl-10 duration-300 ease-in-out': {},
+                        },
+                        '.sub-menu': {
+                            '@apply absolute left-0 transform top-[140px] opacity-0 invisible transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:visible group-hover:top-[65px] pb-5 text-[14px] font-semibold shadow-lg rounded-md': {},
+                        },
+                        '.home-heading': {
+                            background: 'linear-gradient(172deg, #FFF 0%, #4F70E6 100%)',
+                            backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                        },
+                        '.animate-slideDown': {
+                            animation: 'slideDown 0.5s ease-out forwards',
+                        },
+                        '.animate-wave': {
+                            animation: 'wave 2s ease-out infinite',
+                        },
+                        '.animate-wave-delay': {
+                            animation: 'wave 2s ease-out infinite 1s',
+                        },
+                        '.button': {
+                            animation: 'wave 2s ease-out infinite 1s',
+                        },
+                        '@keyframes slideDown': {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(0)' },
+                        },
+                        '@keyframes wave': {
+                            '0%': { transform: 'scale(1)', opacity: '0.6' },
+                            '100%': { transform: 'scale(2.5)', opacity: '0' },
+                        },
+                    });
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body class="relative bg-blue-200">
+    <!--====== Start Preloader ======-->
+    <div class="preloader fixed inset-0 flex items-center justify-center bg-white !z-[999999999999]">
+        <div class="loader">
+            <img src="assets/images/loader.png" alt="loader">
+        </div>
+    </div>
+    <!--====== End Preloader ======-->
+    <!--====== Start Overlay ======-->
+    <div class="offcanvas__overlay"></div>
+    <!--====== Start Header Area  ======-->
+    <header
+        class="w-full bg-transparent absolute top-4 left-0 !z-[99999] border-b-[1px] border-[rgba(255,255,255,0.10)]">
+        <!--====  Header Navigation  ===-->
+        <div class="bg-transparent w-[96%] mx-auto  px-6 lg:block hidden">
+            <div class="flex justify-between items-center px-6 rounded-full bg-white">
+                <!--====  Site Branding  ===-->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo-black.svg" alt="Brand Logo"></a>
+                </div>
+
+                <!--=== Main Menu ===-->
+                <nav class="font-Jakarta">
+                    <ul class="flex items-center gap-[30px]">
+
+                        <li class="relative group nav-menu">
+                            <a href="#">Home <i
+                                    class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                            <ul class="sub-menu">
+                                <li><a href="../home-one/index.html" class="nav-sub-menu">Home One</a></li>
+                                <li><a href="../home-tow/index.html" class="nav-sub-menu">Home tow</a></li>
+                        </li>
+                    </ul>
+                    </li>
+
+
+
+
+                    <li class="relative group nav-menu">
+                        <a href="#">Pages <i
+                                class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i>
+                        </a>
+
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../pages/about.html" class="nav-sub-menu">About</a>
+                            </li>
+                            <li class="relative group">
+                                <a href="../pages/project.html" id="shops" class="nav-sub-menu peer">Project<i
+                                        class="far fa-angle-down ml-[100px] text-[16px]"></i>
+                                </a>
+                                <!-- Submenu for Shops -->
+                                <ul id="shops-item"
+                                    class="absolute right-[250px] hidden w-full top-0  bg-white pb-5 !z-[999999999] text-headingColor text-[14px] font-semibold shadow-lg rounded-md  transition-all duration-300 ease-in-out transform translate-y-2">
+                                    <li><a href="../pages/project.html" class="nav-sub-menu">Project</a></li>
+                                    <li><a href="../pages/project-details.html" class="nav-sub-menu">Project Details</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="../pages/teams-condition.html" class="nav-sub-menu">Teams & Condition</a>
+                            </li>
+
+                            <li>
+                                <a class="nav-sub-menu" href="../pages/privacy-policy.html">Privacy & Policy</a>
+                            </li>
+
+                            <li>
+                                <a class="nav-sub-menu" href="../pages/contact-us.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="nav-sub-menu" href="../pages/404.html">404</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li class="relative group nav-menu">
+                        <a href="#">Services <i
+                                class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                        <ul class="sub-menu">
+                            <li><a href="../pages/services.html" class="nav-sub-menu">Our Services</a></li>
+                            <li><a href="../pages/service-details.html" class="nav-sub-menu">Service Details</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li class="relative group nav-menu">
+                        <a href="#">Blog <i
+                                class="far fa-angle-down ml-2 text-[16px] group-hover:rotate-[180deg] transition-all duration-500 ease-in-out"></i></a>
+
+                        <ul class="sub-menu">
+                            <li><a href="../pages/blog-classic.html" class="nav-sub-menu">Blog Classic</a></li>
+                            <li><a href="../pages/blog-details.html" class="nav-sub-menu">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-menu">
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+
+
+                    </ul>
+                </nav>
+
+
+
+                <!--=== Sasly Nav Button ===-->
+                <div class="">
+
+
+                    <a href="../pages/contact-us.html"
+                        class="relative overflow-hidden group bg-primaryBlue text-white px-[30px] py-3 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4"><span
+                            class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
+                            class="relative z-10 group-hover:text-white">Get Started</span></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile and Medium Devices -->
+        <div class="bg-transparent px-4 font-Jakarta lg:hidden block">
+            <div class="flex justify-between items-center h-[70px]">
+                <!-- Site Branding -->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo-black.svg" alt="Brand Logo">
+                    </a>
+                </div>
+
+                <!-- Menu Button -->
+                <div class="flex gap-5 items-center">
+                    <!--=== Sasly Nav Button ===-->
+                    <div class="hidden md:block">
+
+                        <a href="../pages/contact-us.html"
+                            class="relative overflow-hidden group bg-primaryBlue text-white px-[30px] py-3 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4"><span
+                                class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
+                                class="relative z-10 group-hover:text-white">Get Started</span></a>
+                    </div>
+
+
+                    <label
+                        class="relative w-10 h-[34px] md:w-11 md:h-[40px] rounded-md cursor-pointer border border-black"
+                        id="menu-btn">
+                        <input type="checkbox" class="hidden peer" />
+                        <div class="checkmark flex flex-col items-center justify-center gap-4">
+                            <span
+                                class="block w-[30px]  h-[2px] bg-black rounded-[3px] absolute top-[9px] md:top-[11px]  transition-all duration-300 ease-in-out peer-checked:top-1/2 peer-checked:rotate-45"></span>
+                            <span
+                                class="block w-[30px]  h-[2px] bg-black rounded-[3px] absolute top-1/2  -translate-y-1/2 transition-all duration-300 ease-in-out peer-checked:opacity-0"></span>
+                            <span
+                                class="block w-[30px]  h-[2px] bg-black rounded-[3px] absolute bottom-[9px] md:bottom-[11px] transition-all duration-300 ease-in-out peer-checked:bottom-1/2 peer-checked:-rotate-45"></span>
+                        </div>
+                    </label>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="fixed top-0 left-0 transform -translate-x-full w-[75%] md:w-[50%] h-full overflow-y-auto bg-white p-5 shadow-lg z-50">
+            <div class="flex justify-between items-center">
+                <!-- Site Branding -->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo/logo-black.svg" alt="Brand Logo">
+                    </a>
+                </div>
+                <!-- close sidebar button -->
+                <button id="close-btn" class="size-9 rounded-md flex justify-center items-center border">
+                    <i class="fas fa-times text-[20px] text-textColor font-[200]"></i>
+                </button>
+            </div>
+
+
+            <ul class="mt-5 flex flex-col gap-3">
+
+                <!-- -------home page  -->
+                <li class="border-b pb-3">
+                    <button id="home-btn"
+                        class="flex justify-between items-center w-full text-left text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Home</span>
+                        <i class="far fa-angle-down text-sm"></i>
+                    </button>
+
+                    <ul id="home-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../home-one/index.html">Home
+                                One</a></li>
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../home-tow/index.html">Home
+                                tow</a></li>
+                    </ul>
+
+                </li>
+
+                <!-- -------page page  -->
+
+
+                <li class="border-b pb-3">
+                    <button id="pages-btn"
+                        class="flex justify-between items-center w-full text-left text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Pages</span>
+                        <i class="far fa-angle-down text-sm"></i>
+                    </button>
+
+                    <ul id="pages-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../pages/about.html">About</a>
+                        </li>
+
+                        <li class="border-b pb-3 pt-4">
+
+                            <button id="shops-btn"
+                                class="flex justify-between items-center w-full text-left pl-4 text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                                <span>Project</span>
+                                <i class="far fa-angle-down text-sm"></i>
+                            </button>
+                            <ul id="shops-submenu" class="sub-menu hidden">
+                                <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/project.html">Project</a></li>
+                                <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu pl-10"
+                                        href="../pages/project-details.html">Project Details</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu"
+                                href="../pages/teams-condition.html">Teams & Condition</a>
+                        </li>
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../pages/privacy-policy.html">
+                                Privacy & Policy</a></li>
+
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu"
+                                href="../pages/contact-us.html">Contact US</a></li>
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../pages/faqs.html">Faqs</a>
+                        </li>
+
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/404.html">404</a></li>
+                    </ul>
+                </li>
+
+                <li class="border-b pb-3">
+                    <button id="service-btn"
+                        class="flex justify-between items-center w-full text-left text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Services</span>
+                        <i class="far fa-angle-down text-sm"></i>
+                    </button>
+
+                    <ul id="service-submenu" class="sub-menu hidden">
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu"
+                                href="../pages/services.html">Services</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/service-details.html">Service
+                                Details</a></li>
+                    </ul>
+                </li>
+
+                <li class="border-b pb-3">
+                    <button id="blogs-btn"
+                        class="flex justify-between items-center w-full text-left text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>Blog</span>
+                        <i class="far fa-angle-down text-sm"></i>
+                    </button>
+
+                    <ul id="blogs-submenu" class="sub-menu hidden">
+
+                        <li class="border-b pb-3 pt-4"><a class="mobile-sub-menu" href="../pages/blog-classic.html">Blog
+                                Classic</a></li>
+                        <li class="pt-4"><a class="mobile-sub-menu" href="../pages/blog-details.html">Blog Details</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="border-b pb-3">
+                    <button
+                        class="w-full text-left text-secondaryColor text-[18px] font-semibold hover:text-primary duration-300">
+                        <span>About</span>
+                    </button>
+                </li>
+
+
+            </ul>
+
+
+            <!--=== Sasly Nav Button ===-->
+            <div class="w-[170px] mt-7 mb-10">
+                <a href="../pages/contact.html"
+                    class="bg-ai-btn px-5 py-[11px] rounded-md text-white text-[14px] font-medium flex justify-center items-center gap-2 border border-[rgba(255,255,255,0.10)] hover:bg-bodyColor hover:border hover:border-primary duration-300 ease-in-out">Try
+                    for free<i class="far fa-angle-double-right"></i></a>
+            </div>
+
+
+            <div>
+                <h3 class="text-[24px] text-secondaryColor font-bold font-Jakarta">Follow Us</h3>
+                <ul class="flex items-center gap-[10px] mt-4">
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-facebook-f text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-twitter text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-linkedin-in text-[14px]"></i></a></li>
+                    <li><a class="size-[35px] text-textColor border-[1px] flex justify-center items-center rounded-full hover:bg-primary hover:text-white hover:border-primary duration-300"
+                            href="#"><i class="fab fa-youtube text-[14px]"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!-- Overlay -->
+        <div id="overlay" class="fixed inset-0 bg-black/30 bg-opacity-50 backdrop-blur-lg hidden -z-10">
+        </div>
+
+    </header>
+
+
+    <!--====== End Header Area  ======-->
+    <!--======  Smooth Wrapper  ======-->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!--======  Main  ======-->
+            <div class="h-[200vh]"></div>
+            <!--=== Footer Area ===-->
+            <div class="bg-bgPrimary section-gap">
+                <div class="container mx-auto pt-20 ">
+                    <!-- Map -->
+                    <div class="w-full md:h-[220px] h-[150px] grayscale mb-10">
+                        <iframe class="w-full h-full border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.848378512679!2d90.3906720744248!3d23.750876388956448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b89908ba2d3f%3A0x9dc50f5027f87f69!2sDhaka!5e0!3m2!1sen!2sbd!4v1650000000000!5m2!1sen!2sbd"
+                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Main Footer -->
+                    <div class="mt-15 flex flex-wrap justify-between space-y-10 md:space-y-0 mb-20">
+                        <!-- Logo & About -->
+                        <div class="max-w-[330px]">
+                            <a href="/">
+                                <img class="object-contain" src="assets/images/footer/footer-logo.png"
+                                    alt="putech logo" />
+                            </a>
+                            <p class="text-white mt-[30px]">
+                                Technology is constantly evolving, shaping the way we live and work. It encompasses
+                                automation, connectivity
+                            </p>
+
+                            <!-- Social Media -->
+                            <div class="mt-5 flex items-center gap-3">
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out">
+                                    <i class="fab fa-facebook-f text-[18px]"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out">
+                                    <i class="fab fa-twitter text-[18px]"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out">
+                                    <i class="fab fa-linkedin-in text-[18px]"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    class="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out">
+                                    <i class="fab fa-pinterest-p text-[18px]"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="max-w-[330px]">
+                            <h4 class="text-white">Contact</h4>
+                            <div class="mt-7 flex flex-col gap-7">
+                                <!-- Address -->
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-white/10 w-10 h-10 flex justify-center items-center rounded-full">
+                                        <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white mb-2">Address</p>
+                                        <h5 class="text-white">8502 Preston Rd., Maine 98380</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-white/10 w-10 h-10 flex justify-center items-center rounded-full">
+                                        <i class="fas fa-phone-alt text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white mb-2">Phone Number</p>
+                                        <h5 class="text-white">012 345 678 9101</h5>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-white/10 w-10 h-10 flex justify-center items-center rounded-full">
+                                        <i class="fas fa-envelope text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white mb-2">Email</p>
+                                        <h5 class="text-white">jackson.graham@example.com</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="max-w-[330px]">
+                            <h4 class="text-white">Newsletter</h4>
+                            <p class="text-white mt-7">
+                                Technology is constantly evolving, shaping the way we live and work
+                            </p>
+                            <div class="mt-7 relative">
+                                <input type="text"
+                                    class="w-full border border-white pl-5 rounded-full h-[54px] text-white text-[16px] font-secondary font-normal outline-0 placeholder:text-white focus:border-primaryBlue duration-300 ease-in-out bg-black"
+                                    placeholder="Your email..." />
+                                <button
+                                    class="bg-primaryBlue w-10 h-10 rounded-full flex items-center justify-center text-secondaryColor absolute top-1.5 right-2">
+                                    <i class="fas fa-paper-plane text-[20px]"></i>
+                                </button>
+                                <span class="text-white text-[12px] font-normal font-secondary mt-2 ml-3 block">
+                                    It only takes 2 minutes to complete.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="text-white/20" />
+
+                    <!-- Footer Bottom -->
+                    <div class="py-[30px] md:flex justify-between items-center">
+                        <div>
+                            <p class="text-white">© Putech 2025 | All Rights Reserved</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <ul class="flex flex-wrap items-center space-x-7">
+                                <li>
+                                    <a href="/terms-condition"
+                                        class="text-white text-[16px] font-normal font-secondary hover:text-primaryBlue duration-300 ease-in-out">
+                                        Terms & Condition
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/privacy-policy"
+                                        class="text-white text-[16px] font-normal font-secondary hover:text-primaryBlue duration-300 ease-in-out">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contact"
+                                        class="text-white text-[16px] font-normal font-secondary hover:text-primaryBlue duration-300 ease-in-out">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--====== End Footer  ======-->
+
+        </div>
+    </div>
+    <!--====== Jquery js ======-->
+    <script src="../common/js/plugins/jquery-3.7.1.min.js"></script>
+    <!--====== Gsap Js ======-->
+    <script src="../common/js/plugins/gsap/gsap.min.js"></script>
+    <!-- <script src="../common/js/plugins/gsap/SplitText.min.js"></script> -->
+    <!-- <script src="../common/js/plugins/gsap/ScrollSmoother.min.js"></script> -->
+    <!-- <script src="../common/js/plugins/gsap/ScrollTrigger.min.js"></script> -->
+    <!--====== Slick js ======-->
+    <script src="../common/js/plugins/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <!-- <script src="../common/js/plugins/jquery.magnific-popup.min.js"></script> -->
+    <!--====== Aos js ======-->
+    <!-- <script src="../common/js/plugins/aos.js"></script> -->
+    <!--====== Main js ======-->
+    <script src="../common/js/common_script.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/jquery.animatedheadline.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
