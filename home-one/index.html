@@ -15,9 +15,6 @@
     <!--====== Google Fonts ======-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
     <!--====== FlatIcon css ======-->
     <link rel="stylesheet" href="../common/fonts/flaticon/flaticon_sasly.css">
     <!--====== FontAwesome css ======-->
@@ -35,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--====== Tailwind css ======-->
+    <!--====== Tailwind css (single include) ======-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--====== Tailwind config ======-->
     <script>
@@ -149,6 +146,18 @@
                             '0%': { transform: 'scale(1)', opacity: '0.6' },
                             '100%': { transform: 'scale(2.5)', opacity: '0' },
                         },
+                        /* Marquee animation */
+                        '@keyframes marquee': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        },
+                        '.animate-marquee': {
+                            animation: 'marquee 25s linear infinite',
+                        },
+                        '.animate-marquee-2': {
+                            animation: 'marquee 25s linear infinite',
+                            animationDelay: '12.5s',
+                        },
                     });
                 }
             ]
@@ -156,7 +165,7 @@
     </script>
 </head>
 
-<body class="relative bg-blue-200">
+<body class="relative">
     <!--====== Start Preloader ======-->
     <div class="preloader fixed inset-0 flex items-center justify-center bg-white !z-[999999999999]">
         <div class="loader">
@@ -275,9 +284,7 @@
 
 
                 <!--=== Sasly Nav Button ===-->
-                <div class="">
-
-
+                <div>
                     <a href="../pages/contact-us.html"
                         class="relative overflow-hidden group bg-primaryBlue text-white px-[30px] py-3 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4"><span
                             class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
@@ -495,9 +502,222 @@
         <div id="smooth-content">
 
             <!--======  Main  ======-->
-            <div class="h-[200vh]"></div>
+            <main>
+
+
+                <!-- ================= Banner Section ================= -->
+                <section class="relative bg-[#F2F4F8] pb-16">
+                    <div class="container mx-auto md:pt-[120px] pt-5 2xl:pt-[160px] md:pb-[160px]">
+                        <div class="md:flex items-center gap-5 z-10 relative pt-[112px]">
+                            <div class="max-w-[300px] relative">
+                                <img class="w-full h-auto" src="assets/images/hero/hero-1.png" alt="Putech image" />
+                                <img class="w-full absolute left-[-10px] top-1/2 -translate-y-1/2"
+                                    src="assets/images/hero/border-shape.svg" alt="shape" />
+                            </div>
+                            <div class="max-w-[500px] md:mt-[-50px] mt-10 ml-2">
+                                <h1 class="!uppercase ">creativity Meets Strategy </h1>
+                                <p class="text-[16px] font-bold leading-7 max-w-[392px] mt-5 lg:hidden block">
+                                    Elevate Your Brand with Inspired Design Financial planners help
+                                    people to gain knowledge about to is invest and save their money
+                                    Elevate
+                                </p>
+                                <div>
+                                    <a href="../pages/contact-us.html"
+                                        class="relative overflow-hidden group bg-primaryBlue text-white px-[30px] py-3 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4"><span
+                                            class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
+                                            class="relative z-10 group-hover:text-white">Get Started</span></a>
+                                </div>
+                            </div>
+                            <div class="lg:block hidden">
+                                <div class="flex items-center gap-5 lg:ml-[-260px] xl:ml-[-170px] lg:mt-[-100px]">
+                                    <img src="assets/images/hero/icon-1.png" alt="get start icon" />
+                                    <p class="xl:text-[16px] text-[14px] font-bold leading-7 max-w-[392px]">Elevate Your
+                                        Brand with
+                                        Inspired Design Financial planners help people to gain knowledge about to is
+                                        invest and save
+                                        their money Elevate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banner background shapes -->
+                    <img class="absolute left-0 bottom-0 z-0" src="assets/images/hero/left.png" alt="" />
+                    <img class="absolute right-0 top-0 z-0" src="assets/images/hero/right.png" alt="" />
+                </section>
+
+
+                <!-- ================= Marquee Banner Section  ================= -->
+                <section class="relative">
+                    <!-- (Optional) decorative absolute images wrapper - removed bg-red-500 debug -->
+                    <div class="absolute inset-x-0 z-10 md:block hidden pointer-events-none">
+                        <div class="absolute -bottom-40 right-10 flex gap-4 justify-end">
+                            <img class="lg:w-[290px] w-[200px] lg:h-[380px] h-[310px] object-contain"
+                                src="assets/images/hero/hero-2.png" alt="putech image" />
+                            <img class="lg:w-[250px] w-[160px] h-[365px] mt-[-30px] object-contain"
+                                src="assets/images/hero/hero-3.png" alt="putech image" />
+                        </div>
+                    </div>
+                    <div class="bg-primaryBlue overflow-hidden h-[80px]">
+
+                        <!-- track wrapper -->
+                        <div class="relative w-full h-full">
+                            <!-- track 1 -->
+                            <div
+                                class="absolute left-0 top-0 w-[200%] h-full flex items-center whitespace-nowrap animate-marquee">
+                                <div class="flex gap-10 items-center mx-9">
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Software development" />
+                                    <span
+                                        class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Software
+                                        development</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Content writing" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Content
+                                        writing</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="UI/UX Design" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">UI/UX
+                                        Design</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Web design" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Web
+                                        design</span>
+                                    <!-- duplicate to fill 200% width -->
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Software development" />
+                                    <span
+                                        class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Software
+                                        development</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Content writing" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Content
+                                        writing</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="UI/UX Design" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">UI/UX
+                                        Design</span>
+                                    <img class="object-contain inline-block" src="assets/images/hero/star.svg"
+                                        alt="Web design" />
+                                    <span class="text-white text-[40px] font-bold tracking-[-1.08px] capitalize">Web
+                                        design</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ================= Services (About top replacement) ================= -->
+                <section class="section-gap pt-[100px]">
+                    <div class="container">
+                        <!-- Section Title -->
+                        <div class="text-center max-w-[900px] mx-auto ">
+                            <span class="section-label">Latest service</span>
+                            <h2 class="mt-3">Transform Revolutionizing Reality Connect</h2>
+                        </div>
+
+                        <!-- Services Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] md:mt-[60px] mt-12">
+                            <!-- Card 01 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon1.png" alt="Tech Pro Services" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Tech Pro Services</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">01</h3>
+                                </div>
+                            </a>
+                            <!-- Card 02 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon2.png" alt="Cloud Integration" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Cloud Integration</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">02</h3>
+                                </div>
+                            </a>
+                            <!-- Card 03 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon3.png" alt="UI/UX Design" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">UI/UX Design</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">03</h3>
+                                </div>
+                            </a>
+                            <!-- Card 04 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon4.png" alt="Data Analytics" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Data Analytics</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">04</h3>
+                                </div>
+                            </a>
+                            <!-- Card 05 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon5.png" alt="Cyber Security" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Cyber Security</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">05</h3>
+                                </div>
+                            </a>
+                            <!-- Card 06 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon6.png" alt="Digital Marketing" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Digital Marketing</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">06</h3>
+                                </div>
+                            </a>
+                            <!-- Card 07 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon7.png" alt="AI Automation" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">AI Automation</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">07</h3>
+                                </div>
+                            </a>
+                            <!-- Card 08 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon8.png" alt="Product Strategy" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Product Strategy</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">08</h3>
+                                </div>
+                            </a>
+                            <!-- Card 09 -->
+                            <a href="#" class="bg-white border border-primaryBorder rounded-[10px] p-6 flex justify-between items-center hover:border-primaryBlue duration-300 ease-in-out group">
+                                <div class="flex items-center gap-5">
+                                    <img src="assets/images/icon/icon9.png" alt="Support & Maintenance" />
+                                    <h4 class="text-[18px] md:text-[20px] xl:text-[24px] group-hover:text-primaryBlue duration-300">Support & Maintenance</h4>
+                                </div>
+                                <div>
+                                    <h3 class="text-[#666A73] font-medium capitalize tracking-[-0.64px]">09</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
             <!--=== Footer Area ===-->
-            <div class="bg-bgPrimary section-gap">
+            <div class="bg-bgPrimary section-gap hidden">
                 <div class="container mx-auto pt-20 ">
                     <!-- Map -->
                     <div class="w-full md:h-[220px] h-[150px] grayscale mb-10">
@@ -631,7 +851,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             <!--====== End Footer  ======-->
 
         </div>
