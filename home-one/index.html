@@ -548,6 +548,10 @@
 
                 <!-- ================= Marquee Banner Section  ================= -->
                 <section class="relative">
+
+
+
+
                     <!-- (Optional) decorative absolute images wrapper - removed bg-red-500 debug -->
                     <div class="absolute inset-x-0 z-10 md:block hidden pointer-events-none">
                         <div class="absolute -bottom-40 right-10 flex gap-4 justify-end">
@@ -822,37 +826,37 @@
                         <div class="relative w-full h-full ">
                             <!-- track 1 -->
                             <div
-                                class="absolute left-0 top-0 w-[100%] h-full flex items-center whitespace-nowrap animate-marquee " >
+                                class="absolute left-0 top-0 w-[100%] h-full flex items-center whitespace-nowrap animate-marquee ">
                                 <div class="flex gap-10 items-center  h-[100px]">
-                                    <div className="!pr-10">
+                                    <div class="!pr-10">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-[100px]  object-contain" />
+                                            class="h-[100px]  object-contain" />
                                     </div>
-                                    <div className="!pr-10">
+                                    <div class="!pr-10">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-[100px] !w-full object-contain" />
+                                            class="h-[100px] !w-full object-contain" />
                                     </div>
-                                    <div className="mx-[55px] min-w-[120px]">
+                                    <div class="mx-[55px] min-w-[120px]">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-auto w-auto object-contain" />
+                                            class="h-auto w-auto object-contain" />
                                     </div>
-                                    <div className="mx-[55px] min-w-[120px]">
+                                    <div class="mx-[55px] min-w-[120px]">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-auto w-auto object-contain" />
+                                            class="h-auto w-auto object-contain" />
                                     </div>
-                                    <div className="mx-[55px] min-w-[120px]">
+                                    <div class="mx-[55px] min-w-[120px]">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-auto w-auto object-contain" />
+                                            class="h-auto w-auto object-contain" />
                                     </div>
-                                    <div className="mx-[55px] min-w-[120px]">
+                                    <div class="mx-[55px] min-w-[120px]">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-auto w-auto object-contain" />
+                                            class="h-auto w-auto object-contain" />
                                     </div>
-                                    <div className="mx-[55px] min-w-[120px]">
+                                    <div class="mx-[55px] min-w-[120px]">
                                         <img src="assets/images/company/company-1.png"
-                                            className="h-auto w-auto object-contain" />
+                                            class="h-auto w-auto object-contain" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -905,26 +909,55 @@
 
 
 
-                <!-- ================= Latest Project Section ================= -->
+                <!-- ================= Latest Project Section (Slick Slider) ================= -->
                 <section class="bg-[#F2F4F8] section-gap lg:py-[120px] md:py-[80px] py-[60px] overflow-hidden">
                     <div class="container mx-auto">
-                        <span class="text-primaryBlue uppercase tracking-[2.56px] font-bold block text-center">Latest
-                            Project</span>
-                        <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4 text-center">Your Tomorrow Enhanced Today
-                            Tech Forward
-                        </h2>
-                        <div class="flex flex-wrap justify-center gap-6 pt-12">
-                            <div
-                                class="relative rounded overflow-hidden border-4 border-primaryBlue w-[300px] h-[400px]">
-                                <img src="assets/images/projects/slider-1.png" alt="Project 1"
-                                    class="w-full h-full object-cover" />
+                        <div class="text-center max-w-[900px] mx-auto ">
+                            <span class="section-label">Latest Project</span>
+                            <h2 class="mt-3">Your Tomorrow Enhanced Today
+                                Tech Forward</h2>
+                        </div>
 
 
-                                <a href="#contact"
-                                    class="inline-block mt-4 bg-primaryBlue text-white px-7 py-2.5 rounded-full hover:bg-secondaryColor duration-300">Get
-                                    Started</a>
+
+
+                        <div class="pt-12">
+                            <div class="project-slick-slider">
+                                <!-- Slide 1 -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded overflow-hidden border-4 border-primaryBlue w-[300px] h-[400px] flex flex-col">
+                                        <img src="assets/images/projects/slider-1.png" alt="Project 1"
+                                            class="w-full h-full object-cover" />
+                                        <a href="#contact"
+                                            class="inline-block mt-4 bg-primaryBlue text-white px-7 py-2.5 rounded-full hover:bg-secondaryColor duration-300 absolute bottom-6 left-1/2 -translate-x-1/2">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded overflow-hidden border-4 border-primaryBlue w-[300px] h-[400px] flex flex-col">
+                                        <img src="assets/images/projects/slider-2.png" alt="Project 2"
+                                            class="w-full h-full object-cover" />
+                                        <a href="#contact"
+                                            class="inline-block mt-4 bg-primaryBlue text-white px-7 py-2.5 rounded-full hover:bg-secondaryColor duration-300 absolute bottom-6 left-1/2 -translate-x-1/2">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded overflow-hidden border-4 border-primaryBlue w-[300px] h-[400px] flex flex-col">
+                                        <img src="assets/images/projects/slider-3.png" alt="Project 3"
+                                            class="w-full h-full object-cover" />
+                                        <a href="#contact"
+                                            class="inline-block mt-4 bg-primaryBlue text-white px-7 py-2.5 rounded-full hover:bg-secondaryColor duration-300 absolute bottom-6 left-1/2 -translate-x-1/2">Get
+                                            Started</a>
+                                    </div>
+                                </div>
+                                <!-- Add more slides as needed -->
                             </div>
-                            <!-- Repeat for other projects as needed -->
                         </div>
                     </div>
                 </section>
@@ -1165,9 +1198,410 @@
                 </section>
 
 
+                <!-- ================= Latest Project Section (Slick Slider) ================= -->
+                <section class="bg-[#F2F4F8] section-gap lg:py-[120px] md:py-[80px] py-[60px] overflow-hidden">
+                    <div class="container">
+                        <div class="mx-auto">
+                            <div class="text-center max-w-[900px] mx-auto ">
+                                <span class="section-label">ASk QUESTION</span>
+                                <h2 class="mt-3">Your Tomorrow Enhanced Today
+                                    Tech Forward</h2>
+                            </div>
+                        </div>
+
+
+
+                        <div class="lg:flex items-center justify-between md:mt-[60px] mt-10">
+                            <div class="lg:w-[50%] w-full">
+
+                                <div id="accordionOne">
+                                    <!-- Item 1 -->
+                                    <div data-accordion
+                                        class="mb-4 border-b border-primaryBorder duration-300 ease-in-out  p-4">
+                                        <div data-trigger class="flex justify-between items-center cursor-pointer">
+                                            <h5 class="text-left">
+                                                <span>01.</span> What services does your fintech agency provide?
+                                            </h5>
+                                            <div data-border-box class="w-8 h-8 flex justify-center items-center">
+                                                <svg data-icon-plus xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 4v16m8-8H4" />
+                                                </svg>
+                                                <svg data-icon-minus xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-4 w-4 hidden" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M20 12H4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div data-content class="overflow-hidden max-h-0 transition-all duration-300">
+                                            <p class="mt-2 text-gray-600">
+                                                Technology is constantly evolving, shaping the way we live and work. It
+                                                encompasses innovation, automation, and connectivity driving progress.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div data-accordion
+                                        class="mb-4 border-b border-primaryBorder duration-300 ease-in-out  p-4">
+                                        <div data-trigger class="flex justify-between items-center cursor-pointer">
+                                            <h5 class="text-left">
+                                                <span>01.</span> What services does your fintech agency provide?
+                                            </h5>
+                                            <div data-border-box class="w-8 h-8 flex justify-center items-center">
+                                                <svg data-icon-plus xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 4v16m8-8H4" />
+                                                </svg>
+                                                <svg data-icon-minus xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-4 w-4 hidden" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M20 12H4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div data-content class="overflow-hidden max-h-0 transition-all duration-300">
+                                            <p class="mt-2 text-gray-600">
+                                                Technology is constantly evolving, shaping the way we live and work. It
+                                                encompasses innovation, automation, and connectivity driving progress.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div data-accordion
+                                        class="mb-4 border-b border-primaryBorder duration-300 ease-in-out  p-4">
+                                        <div data-trigger class="flex justify-between items-center cursor-pointer">
+                                            <h5 class="text-left">
+                                                <span>01.</span> What services does your fintech agency provide?
+                                            </h5>
+                                            <div data-border-box class="w-8 h-8 flex justify-center items-center">
+                                                <svg data-icon-plus xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 4v16m8-8H4" />
+                                                </svg>
+                                                <svg data-icon-minus xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-4 w-4 hidden" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M20 12H4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div data-content class="overflow-hidden max-h-0 transition-all duration-300">
+                                            <p class="mt-2 text-gray-600">
+                                                Technology is constantly evolving, shaping the way we live and work. It
+                                                encompasses innovation, automation, and connectivity driving progress.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div data-accordion
+                                        class="mb-4 border-b border-primaryBorder duration-300 ease-in-out  p-4">
+                                        <div data-trigger class="flex justify-between items-center cursor-pointer">
+                                            <h5 class="text-left">
+                                                <span>01.</span> What services does your fintech agency provide?
+                                            </h5>
+                                            <div data-border-box class="w-8 h-8 flex justify-center items-center">
+                                                <svg data-icon-plus xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 4v16m8-8H4" />
+                                                </svg>
+                                                <svg data-icon-minus xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-4 w-4 hidden" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M20 12H4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div data-content class="overflow-hidden max-h-0 transition-all duration-300">
+                                            <p class="mt-2 text-gray-600">
+                                                Technology is constantly evolving, shaping the way we live and work. It
+                                                encompasses innovation, automation, and connectivity driving progress.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div data-accordion
+                                        class="mb-4 border-b border-primaryBorder duration-300 ease-in-out  p-4">
+                                        <div data-trigger class="flex justify-between items-center cursor-pointer">
+                                            <h5 class="text-left">
+                                                <span>01.</span> What services does your fintech agency provide?
+                                            </h5>
+                                            <div data-border-box class="w-8 h-8 flex justify-center items-center">
+                                                <svg data-icon-plus xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M12 4v16m8-8H4" />
+                                                </svg>
+                                                <svg data-icon-minus xmlns="http://www.w3.org/2000/svg"
+                                                    class="h-4 w-4 hidden" fill="none" viewBox="0 0 24 24"
+                                                    stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M20 12H4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div data-content class="overflow-hidden max-h-0 transition-all duration-300">
+                                            <p class="mt-2 text-gray-600">
+                                                Technology is constantly evolving, shaping the way we live and work. It
+                                                encompasses innovation, automation, and connectivity driving progress.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- {/* image part */} -->
+                            <div class="lg:w-[43%] w-full mt-10 lg:mt-0 relative">
+                                <img class="w-full h-auto" src="assets/images/faq/faq-thumb1.png" alt="faq-thumb1" />
+                                <div
+                                    class="bg-[#E1F0FD] rounded-[20px] shadow-faq p-5 flex items-center gap-5 absolute bottom-5 right-5">
+                                    <div>
+                                        <img src="assets/icons/business/Search results for Winner.svg"
+                                            alt="serach icon" />
+                                    </div>
+
+                                    <div>
+                                        <h3>2k+</h3>
+                                        <p>Project Completed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= Contact Section ================= -->
+                <section id="contact" class="section-gap container mx-auto">
+                    <div class="flex flex-col md:flex-row gap-[30px]">
+                        <div class="w-full">
+                            <div>
+                                <span class="section-label uppercase tracking-[2.56px] font-bold">Contact us</span>
+                                <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Our Pricing Plan</h2>
+                                <p class="text-textColor text-[16px] font-normal leading-7">Technology is constantly
+                                    evolving,
+                                    shaping the way we live and work. It encompasses innovation, automation, and
+                                    connectivity
+                                    driving progress</p>
+                            </div>
+                            <div class="flex flex-col xl:flex-row gap-[30px] mt-[30px]">
+                                <div class="bg-[#F2F4F8] p-7 rounded-[10px] mb-4 xl:mb-0">
+                                    <div class="flex items-center gap-2 mb-3"><span
+                                            class="text-primaryBlue">&#128205;</span></div>
+                                    <h5>2715 Ash San Jose, South Dakota 83475</h5>
+                                </div>
+                                <div class="bg-[#F2F4F8] p-7 rounded-[10px]">
+                                    <div class="flex items-center gap-2 mb-3"><span
+                                            class="text-primaryBlue">&#9993;</span></div>
+                                    <h5>lawson.sanders@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white shadow-lg rounded-[20px] md:px-10 px-6 md:py-15 py-10">
+                            <h3 class="text-[30px] mb-6">Send A Message</h3>
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px] mb-[30px]">
+                                    <input type="text"
+                                        class="w-full border-b pb-3 text-[16px] text-textColor font-normal outline-none"
+                                        placeholder="Name" />
+                                    <input type="email"
+                                        class="w-full border-b pb-3 text-[16px] text-textColor font-normal outline-none"
+                                        placeholder="Email" />
+                                    <input type="text"
+                                        class="w-full border-b pb-3 text-[16px] text-textColor font-normal outline-none"
+                                        placeholder="Number" />
+                                    <input type="text"
+                                        class="w-full border-b pb-3 text-[16px] text-textColor font-normal outline-none"
+                                        placeholder="Choose Option" />
+                                </div>
+                                <textarea
+                                    class="w-full border-b pb-3 text-[16px] text-textColor font-normal outline-none"
+                                    placeholder="Message here.."></textarea>
+                                <div class="md:mt-12 mt-7">
+
+                                    <button
+                                        class="relative overflow-hidden group bg-primaryBlue text-white px-[30px] py-2 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4"><span
+                                            class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
+                                            class="relative z-10 group-hover:text-white">Send Message</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- ================= Contact Section ================= -->
+                <section id="contact" class="section-gap container mx-auto">
+                    <div class="flex items-end justify-between">
+
+                        <div class="max-w-[740px] text-left">
+                            <span class="section-label uppercase tracking-[2.56px] font-bold">Blog And News</span>
+                            <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-4">Smart Solutions for a Smarter World
+                            </h2>
+
+                        </div>
+                        <div class="hidden md:block mt-10 md:mt-0 ">
+                            <div class="flex justify-end  items-center">
+                                <a href="../pages/contact-us.html"
+                                    class="relative overflow-hidden group bg-primaryBlue text-white px-[40px] py-4 rounded-full md:text-[18px] text-[16px] font-primary font-medium leading-8 capitalize cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4 "><span
+                                        class="absolute inset-0 rounded-[30px] scale-y-0 origin-center transition-transform duration-300 ease-out group-hover:scale-y-100 z-0 bg-secondaryColor"></span><span
+                                        class="relative z-10 group-hover:text-white">View All Blog</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-12">
+                        <!-- Blog Item  01 -->
+                        <div class="relative rounded-[10px]">
+                            <img class="w-full h-auto rounded-[10px]" src="assets/images/blog/blog-1.png" alt="blogs" />
+
+                            <div class="absolute bottom-7 z-10 px-[30px]">
+                                <div class="flex items-center gap-10 mt-5 mb-5">
+                                    <span class="flex items-center gap-3">
+                                        <!-- User Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">By Admin</span>
+                                    </span>
+                                    <span class="flex items-center gap-3">
+                                        <!-- Comment Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 6h-18c-1.1 0-2 .9-2 2v14l4-4h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">12 Comment</span>
+                                    </span>
+                                </div>
+
+                                <a href="blog-details.html">
+                                    <h4 class="text-white hover:text-primaryBlue duration-300 ease-in-out">
+                                        Where Technology Meets Imagination
+                                    </h4>
+                                </a>
+                            </div>
+
+                            <div class="absolute inset-0 rounded-[10px] z-0"
+                                style="background: linear-gradient(180deg, rgba(3, 3, 3, 0.16), rgba(0, 0, 0, 0.817));">
+                            </div>
+
+                            <span
+                                class="bg-[#E5E8F2] px-4 py-2.5 rounded-md text-[20px] font-semibold text-primary absolute top-6 right-6 capitalize">
+                                Jan 20, 2025
+                            </span>
+                        </div>
+                        <!-- Blog Item  01 -->
+                        <div class="relative rounded-[10px]">
+                            <img class="w-full h-auto rounded-[10px]" src="assets/images/blog/blog-1.png" alt="blogs" />
+
+                            <div class="absolute bottom-7 z-10 px-[30px]">
+                                <div class="flex items-center gap-10 mt-5 mb-5">
+                                    <span class="flex items-center gap-3">
+                                        <!-- User Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">By Admin</span>
+                                    </span>
+                                    <span class="flex items-center gap-3">
+                                        <!-- Comment Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 6h-18c-1.1 0-2 .9-2 2v14l4-4h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">12 Comment</span>
+                                    </span>
+                                </div>
+
+                                <a href="blog-details.html">
+                                    <h4 class="text-white hover:text-primaryBlue duration-300 ease-in-out">
+                                        Where Technology Meets Imagination
+                                    </h4>
+                                </a>
+                            </div>
+
+                            <div class="absolute inset-0 rounded-[10px] z-0"
+                                style="background: linear-gradient(180deg, rgba(3, 3, 3, 0.16), rgba(0, 0, 0, 0.817));">
+                            </div>
+
+                            <span
+                                class="bg-[#E5E8F2] px-4 py-2.5 rounded-md text-[20px] font-semibold text-primary absolute top-6 right-6 capitalize">
+                                Jan 20, 2025
+                            </span>
+                        </div>
+                        <!-- Blog Item  01 -->
+                        <div class="relative rounded-[10px]">
+                            <img class="w-full h-auto rounded-[10px]" src="assets/images/blog/blog-1.png" alt="blogs" />
+
+                            <div class="absolute bottom-7 z-10 px-[30px]">
+                                <div class="flex items-center gap-10 mt-5 mb-5">
+                                    <span class="flex items-center gap-3">
+                                        <!-- User Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">By Admin</span>
+                                    </span>
+                                    <span class="flex items-center gap-3">
+                                        <!-- Comment Icon -->
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 6h-18c-1.1 0-2 .9-2 2v14l4-4h16c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2z" />
+                                        </svg>
+                                        <span class="text-[16px] font-normal text-white">12 Comment</span>
+                                    </span>
+                                </div>
+
+                                <a href="blog-details.html">
+                                    <h4 class="text-white hover:text-primaryBlue duration-300 ease-in-out">
+                                        Where Technology Meets Imagination
+                                    </h4>
+                                </a>
+                            </div>
+
+                            <div class="absolute inset-0 rounded-[10px] z-0"
+                                style="background: linear-gradient(180deg, rgba(3, 3, 3, 0.16), rgba(0, 0, 0, 0.817));">
+                            </div>
+
+                            <span
+                                class="bg-[#E5E8F2] px-4 py-2.5 rounded-md text-[20px] font-semibold text-primary absolute top-6 right-6 capitalize">
+                                Jan 20, 2025
+                            </span>
+                        </div>
+                        <!-- Repeat more blog items -->
+                    </div>
+                </section>
+
+                <!-- Mobile Button -->
+                <div class="md:hidden block mt-10 md:mt-0">
+                    <div class="flex justify-center items-center">
+                        <a href="/blog">
+                            <button class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 transition">
+                                View All Blog
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+                </section>
+
             </main>
             <!--=== Footer Area ===-->
-            <div class="bg-bgPrimary section-gap hidden">
+            <div class="bg-bgPrimary section-gap">
                 <div class="container mx-auto pt-20 ">
                     <!-- Map -->
                     <div class="w-full md:h-[220px] h-[150px] grayscale mb-10">
@@ -1325,6 +1759,24 @@
     <script src="assets/js/jquery.animatedheadline.js"></script>
     <!--====== Main js ======-->
     <script src="assets/js/theme.js"></script>
+    <!--====== Slick Slider Init ======-->
+    <script>
+        $(document).ready(function () {
+            $('.project-slick-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    { breakpoint: 1280, settings: { slidesToShow: 2 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1 } }
+                ]
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

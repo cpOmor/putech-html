@@ -9,147 +9,136 @@
     
 -----------------------------------------------------------------------------------*/
 
-(function($) {
-    'use strict';
+(function ($) {
+  "use strict";
 
-    //===== Slick slider js
+  //===== Slick slider js
 
-    $('.hero-content').animatedHeadline({
-        animationType: 'rotate-1'
-    });
+  $(".hero-content").animatedHeadline({
+    animationType: "rotate-1",
+  });
 
-
-    if ($('.case-slider').length) {
-        $('.case-slider').slick({
-            dots: false,
-            arrows: false,
-            infinite: true,
-            speed: 800,
-            autoplay: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            prevArrow: '<div class="prev"><i class="fas fa-angle-left"></i></div>',
-            nextArrow: '<div class="next"><i class="fas fa-angle-right"></i></div>',
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    }
-
-    if ($('.company-slider').length) {
-        $('.company-slider').slick({
-            dots: false,
-            arrows: false,
-            infinite: true,
-            speed: 800,
-            autoplay: false,
-            slidesToShow: 7,
-            slidesToScroll: 1,
-            prevArrow: '<div class="prev"><i class="fas fa-angle-left"></i></div>',
-            nextArrow: '<div class="next"><i class="fas fa-angle-right"></i></div>',
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4,
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 450,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
-    }
-
-
-    if ($('.testimonial-slider').length) {
-      $('.testimonial-slider').slick({
-          speed: 8000,
-          autoplay: true,
-          autoplaySpeed: 0,
-          centerMode: false,
-          cssEase: 'linear',
-          slidesToShow: 1,
-          draggable:false,
-          focusOnSelect:false,
-          pauseOnFocus:false,
-          pauseOnHover:false,
-          slidesToScroll: 1,
-          variableWidth: true,
-          infinite: true,
-          initialSlide: 1,
-          arrows: false,
-          breakpoints: {
-              992: {
-                  slidesPerView: 4,
-              },
-              768: {
-                  slidesPerView: 3,
-              },
-              576: {
-                  slidesPerView: 2,
-              },
+  if ($(".case-slider").length) {
+    $(".case-slider").slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 800,
+      autoplay: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<div class="prev"><i class="fas fa-angle-left"></i></div>',
+      nextArrow: '<div class="next"><i class="fas fa-angle-right"></i></div>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
           },
-      });
-  }
-  if ($('.testimonial-slider-rtl').length) {
-      $('.testimonial-slider-rtl').slick({
-          speed: 8000,
-          autoplay: true,
-          autoplaySpeed: 0,
-          centerMode: false,
-          cssEase: 'linear',
-          draggable:false,
-          focusOnSelect:false,
-          pauseOnFocus:false,
-          pauseOnHover:false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: true,
-          infinite: true,
-          initialSlide: 1,
-          arrows: false,
-          buttons: false,
-          rtl:true
-      });
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
   }
 
+  if ($(".company-slider").length) {
+    $(".company-slider").slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 800,
+      autoplay: false,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      prevArrow: '<div class="prev"><i class="fas fa-angle-left"></i></div>',
+      nextArrow: '<div class="next"><i class="fas fa-angle-right"></i></div>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
 
+  if ($(".testimonial-slider").length) {
+    $(".testimonial-slider").slick({
+      speed: 8000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      centerMode: false,
+      cssEase: "linear",
+      slidesToShow: 1,
+      draggable: false,
+      focusOnSelect: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      slidesToScroll: 1,
+      variableWidth: true,
+      infinite: true,
+      initialSlide: 1,
+      arrows: false,
+      breakpoints: {
+        992: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  }
+  if ($(".testimonial-slider-rtl").length) {
+    $(".testimonial-slider-rtl").slick({
+      speed: 8000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      centerMode: false,
+      cssEase: "linear",
+      draggable: false,
+      focusOnSelect: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+      infinite: true,
+      initialSlide: 1,
+      arrows: false,
+      buttons: false,
+      rtl: true,
+    });
+  }
 })(window.jQuery);
 
-
-
-
-
-
-
- 
 // sidebar js code start here
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menu-btn");
@@ -287,7 +276,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   homeBtn.addEventListener("click", () => toggleSubmenu(homeSubmenu));
   serviceBtn.addEventListener("click", () => toggleSubmenu(serviceSubmenu));
-  // projectBtn.addEventListener("click", () => toggleSubmenu(projectSubmenu));
   blogsBtn.addEventListener("click", () => toggleSubmenu(blogsSubmenu));
   pagesBtn.addEventListener("click", () => toggleSubmenu(pagesSubmenu));
   shopsBtn.addEventListener("click", toggleShopsSubmenu);
@@ -299,9 +287,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // sidebar js code end here
 
-
 // sub menu show js code start here
-  
 
 const shops = document.getElementById("shops");
 const shopsItem = document.getElementById("shops-item");
@@ -323,66 +309,54 @@ shopsItem.addEventListener("mouseenter", () => {
 shops.addEventListener("mouseleave", () => {
   shopsItem.classList.remove("visible");
   shopsItem.style.display = "none";
- 
 });
 
 shopsItem.addEventListener("mouseleave", () => {
   shopsItem.classList.remove("visible");
   shopsItem.style.display = "none";
- 
 });
 
 // sub menu show js code end here
 
-
-
-
-// JavaScript to handle accordion functionality
-document.addEventListener("DOMContentLoaded", () => {
-  const accordions = document.querySelectorAll("[data-accordion]");
-
-  // Open the first accordion by default
-  const firstAccordion = accordions[0];
-  const firstContent = firstAccordion.querySelector("[data-content]");
-  const firstPlus = firstAccordion.querySelector("[data-icon-plus]");
-  const firstMinus = firstAccordion.querySelector("[data-icon-minus]");
-  const firstBorderBox = firstAccordion.querySelector("[data-border-box]");
-
-  firstContent.style.maxHeight = `${firstContent.scrollHeight}px`;
-  firstPlus.classList.add("hidden");
-  firstMinus.classList.remove("hidden");
-  firstBorderBox.style.borderColor = "#FE7587";
-
-  accordions.forEach((accordion) => {
-      const trigger = accordion.querySelector("[data-trigger]");
-      const content = accordion.querySelector("[data-content]");
-      const iconPlus = accordion.querySelector("[data-icon-plus]");
-      const iconMinus = accordion.querySelector("[data-icon-minus]");
-      const borderBox = accordion.querySelector("[data-border-box]");
-
-      trigger.addEventListener("click", () => {
-          const isOpen =
-              content.style.maxHeight && content.style.maxHeight !== "0px";
-
-          accordions.forEach((acc) => {
-              const accContent = acc.querySelector("[data-content]");
-              const accIconPlus = acc.querySelector("[data-icon-plus]");
-              const accIconMinus = acc.querySelector("[data-icon-minus]");
-              const accBorderBox = acc.querySelector("[data-border-box]");
-
-              accContent.style.maxHeight = null;
-              accIconPlus.classList.remove("hidden");
-              accIconMinus.classList.add("hidden");
-              accBorderBox.style.borderColor = ""; 
-          });
-
-        
-          if (!isOpen) {
-              content.style.maxHeight = `${content.scrollHeight}px`;
-              iconPlus.classList.add("hidden");
-              iconMinus.classList.remove("hidden");
-              borderBox.style.borderColor = "#FE7587";
-          }
+document.addEventListener("DOMContentLoaded", function () {
+  const accordions = document.querySelectorAll(
+    "#accordionOne [data-accordion]"
+  );
+  // Open first by default
+  if (accordions.length) {
+    const first = accordions[0];
+    const firstContent = first.querySelector("[data-content]");
+    const firstPlus = first.querySelector("[data-icon-plus]");
+    const firstMinus = first.querySelector("[data-icon-minus]");
+    const firstBorderBox = first.querySelector("[data-border-box]");
+    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+    firstPlus.classList.add("hidden");
+    firstMinus.classList.remove("hidden");
+    firstBorderBox.style.borderColor = "#FE7587";
+  }
+  accordions.forEach((acc) => {
+    const trigger = acc.querySelector("[data-trigger]");
+    const content = acc.querySelector("[data-content]");
+    const iconPlus = acc.querySelector("[data-icon-plus]");
+    const iconMinus = acc.querySelector("[data-icon-minus]");
+    const borderBox = acc.querySelector("[data-border-box]");
+    trigger.addEventListener("click", function () {
+      const isOpen =
+        content.style.maxHeight && content.style.maxHeight !== "0px";
+      // Close all
+      accordions.forEach((a) => {
+        a.querySelector("[data-content]").style.maxHeight = null;
+        a.querySelector("[data-icon-plus]").classList.remove("hidden");
+        a.querySelector("[data-icon-minus]").classList.add("hidden");
+        a.querySelector("[data-border-box]").style.borderColor = "";
       });
+      // Open clicked
+      if (!isOpen) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        iconPlus.classList.add("hidden");
+        iconMinus.classList.remove("hidden");
+        borderBox.style.borderColor = "#FE7587";
+      }
+    });
   });
 });
